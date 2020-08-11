@@ -1,91 +1,311 @@
-
 @import "fontawesome/solid.min.css";
 @import "fontawesome/brands.min.css";
 @import "fontawesome/regular.min.css";
 @import "fontawesome/v4-shims.min.css";
 @import "fontawesome/all.min.css";
 
-@import "bootstrap/bootstrap-reboot.min.css";
-@import "bootstrap/bootstrap-grid.min.css";
-
-.header {
-    background-color: #fd644f;
-    padding: 0;
-    margin: 0;
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
 }
 
-.nav {
-    padding-top: 10px;
-    display: flex;
-    justify-content: center !important;
-    flex-wrap: wrap;
-    list-style: none;
-    width: 100%;
+/* generic */
+
+.orangeCircle {
+  margin-top: 5%;
+  width: 70%;
+  max-width: 120px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: tomato;
+  border-radius: 50%;
 }
 
-.nav-link {
-    color: white;
-    display: block;
-    padding: .5rem 1rem;
+.mainTitle {
+  margin: 10px;
+  font-size: 60px;
+  color: #3b3d40;
 }
 
-.nav-link:hover {
-    color: white;
-    text-decoration: underline;
+.columnCentered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.social-links {
-    margin: 10px;
-    padding-right: 0;
+/* nav */
+
+header {
+  background-color: #fd644f;
 }
 
-.social-links > a > i {
-    font-size: 32px;
-    color: white;
-    padding-right: 5px;
+nav {
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
-.albert-container {
-    width: 25%;
-    margin: auto;
+.navItemns {
+  display: flex;
+  justify-content: start;
 }
 
-.albert {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin: auto;
+.navItemns li {
+  margin: 20px;
+  list-style: none;
 }
 
-.title-container {
-    width: 75%;
-    margin: auto;
+.navItemns li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navSocial {
+  display: flex;
+  justify-content: end;
+}
+
+.navSocial a i {
+  color: white;
+  font-size: 32px;
+  margin: 5px;
+}
+
+/* hero */
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.albertImg {
+  margin-top: 5%;
+  width: 20%;
+}
+
+.titleHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
 .title {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 0;
-    font-size: 62px;
+  margin: 0;
+  font-size: 60px;
 }
 
 .subtitle {
-    margin-top: 0;
-    text-align: center;
-    color: #fed1cb;
+  margin: 0;
+  margin-bottom: 10%;
+  font-size: 30px;
 }
 
-.down-arrow-container {
-    width: 7%;
-    margin: auto;
+.downArrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
 }
 
-.down-arrow {
-    text-align: center;
-    margin-bottom: 0;
+.downArrow img {
+  width: 60%;
 }
 
-.active {
-    text-decoration: underline;
+/* startup */
+
+.startupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
 }
+
+.borderIcon {
+  margin-top: 5%;
+  width: 70%;
+  max-width: 120px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: tomato;
+  border-radius: 50%;
+}
+
+.startupLegend {
+  margin-bottom: 5%;
+  width: 60%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.startupText {
+  display: flex;
+  justify-content: start;
+  width: 80%;
+}
+
+.startupText p {
+  margin: 2%;
+  color: gray;
+  margin-bottom: 5%;
+}
+
+/* Lo que hacemos */
+
+.whatWeDoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.borderIconWhatWeDo {
+  margin-top: 5%;
+  width: 70%;
+  max-width: 120px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: tomato;
+  border-radius: 50%;
+}
+
+.borderIconWhatWeDo img {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.whatWeDoLegend {
+  width: 45%;
+  font-size: 20px;
+  color: gray;
+}
+
+.whatWeDoItemList {
+  display: flex;
+  justify-content: center;
+}
+
+.whatWeDoItem {
+  width: 70%;
+  max-width: 300px;
+  margin: 5%;
+}
+
+.whatWeDoItem h1 {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.whatWeDoItem p {
+  font-size: 15px;
+  text-align: center;
+  color: gray;
+}
+
+.whatWeDoItem img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+/* team */
+
+.teamContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7%;
+}
+
+.mainTitleTeam {
+  width: 50%;
+  text-align: center;
+}
+
+.teamLegend {
+  color: #fd644f;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.teamLegendAutors {
+  color: #fd644f;
+  font-size: 12px;
+  margin-bottom: 70px;
+}
+
+.carousel {
+  max-width: 80%;
+}
+
+.carouselItem {
+  display: flex;
+  justify-content: center;
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.teamMember:hover {
+  box-shadow: 0 0 5px gray;
+}
+
+.teamMemberAvatar {
+  border-radius: 50%;
+}
+
+.teamMemberTextOne {
+  color: gray;
+  font-size: 15px;
+  width: 70%;
+}
+
+.teamMemberTextTwo {
+  color: black;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.teamMemberTextThree {
+  color: gray;
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 10%;
+}
+
+/* casos de exito */
+
+.successStoriesContainer {
+  background-color: #fd644f;
+  color: white;
+  padding-bottom: 7%;
+}
+
+.successStoriesTitle {
+  font-size: 13px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+/* responsive */
+
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */

@@ -1,70 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Naranja y media</title>
-    <link rel="stylesheet" href="css/index.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- owlcarousel -->
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="./owlcarousel/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
 
-    <!--    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173797720-1"></script>-->
-    <!--    <script>-->
-    <!--        window.dataLayer = window.dataLayer || [];-->
-    <!--        function gtag(){dataLayer.push(arguments);}-->
-    <!--        gtag('js', new Date());-->
-
-    <!--        gtag('config', 'UA-173797720-1');-->
-    <!--    </script>-->
-</head>
-<body>
-<div class="container-fluid">
-    <div class="row">
-        <header class="col-12 header">
-            <nav class="row">
-                <ul class="col-8 nav" id="nav-container">
-                    <!--                <li class="nav-item">-->
-                    <!--                    <a class="nav-link active" href="#">Active</a>-->
-                    <!--                </li>-->
-                </ul>
-                <div class="col-4 text-right social-links">
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-
-                </div>
-            </nav>
-
-
-
-            <div class="d-flex align-content-center">
-                <div class="albert-container">
-                    <img src="images/ALBERT.png" class="albert" alt="albert-image">
-
-                </div>
-            </div>
-            <div class="d-flex align-content-center">
-                <div class="title-container">
-                    <h1 class="title"><b>Naranja & media</b></h1>
-                    <h2 class="subtitle">growth marketing</h2>
-                </div>
-            </div>
-            <div class="d-flex align-content-center">
-                <div class="down-arrow-container">
-                    <img src="images/icons/down-arrow.svg" alt="down-arrow" class="down-arrow"/>
-                </div>
-            </div>
-
-        </header>
-    </div>
-    <!---->
-    <div class="row" id="startup">
-        <div class="col">
-            asdasda
+    <header>
+      <nav>
+        <ul class="navItemns">
+          <li><a href="#startup">STARTUP</a></li>
+          <li><a href="#whatWeDo">LO QUE HACEMOS</a></li>
+          <li>TEAM NARANJA</li>
+          <li>CLIENTES</li>
+          <li>HABLEMOS</li>
+        </ul>
+        <ul class="navSocial">
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </ul>
+      </nav>
+      <div class="heroContainer">
+        <img src="images/ALBERT.png" class="albertImg" alt="albert-image" />
+        <div class="titleHeader">
+          <h1 class="title"><b>Naranja & media</b></h1>
+          <h2 class="subtitle">growth marketing</h2>
         </div>
-    </div>
-</div>
+        <a class="downArrow" href="#startup">
+          <img src="./images/icons/down-arrow.svg" />
+        </a>
+      </div>
+    </header>
 
-<script src="js/index.js"></script>
-</body>
+    <!-- startup -->
+
+    <section id="startup" class="startupContainer">
+      <div class="orangeCircle">
+        <img src="./images/icons/crown.svg" alt="corona" />
+      </div>
+
+      <h1 class="mainTitle">StartUp Digital</h1>
+      <p class="startupLegend">
+        Somos el Partner ideal de aquellas organizaciones que buscan
+        transformarse y ser los Reyes del Marketing Digital.
+      </p>
+      <div class="startupText">
+        <p>
+          Creamos Estrategias usando los mejores aceleradores de Inbound
+          Marketing, generando propuestas de valor disruptivas que logren
+          fidelizar, atraer nuevo público monetizando tu producto o servicio.
+        </p>
+        <p>
+          Nos especializamos en transformar digitalmente los segmentos de
+          empresas B2B y B2C acompañadolas en este proceso de
+          aceleración,potenciando los productos o servicios en diferentes
+          canales de venta.
+        </p>
+      </div>
+    </section>
+
+    <!-- lo que hacemos -->
+
+    <section id="whatWeDo" class="whatWeDoContainer">
+      <div class="orangeCircle">
+        <img src="./images/icons/app.svg" alt="corona" />
+      </div>
+      <h1 class="mainTitle">Lo que hacemos</h1>
+      <p class="whatWeDoLegend">
+        Nutrimos tu marca de manera creativa en los siguientes frentes:
+      </p>
+      <div class="whatWeDoItemList">
+        <div class="whatWeDoItem">
+          <img src="./images/icons/vitamin.svg" alt="vitamin" />
+          <h1>CAMPAÑAS DIGITALES</h1>
+          <p>
+            Creamos estrategias disruptivas usando los mejores formatos y
+            canales para los segmentos B2B y B2C.
+          </p>
+        </div>
+        <div class="whatWeDoItem">
+          <img src="./images/icons/marketing.svg" alt="vitamin" />
+          <h1>COMUNICACIÓN DIGITAL</h1>
+          <p>
+            Realizamos contenidos ágiles, especializados y social media para tu
+            marca, producto o servicio.
+          </p>
+        </div>
+        <div class="whatWeDoItem">
+          <img src="./images/icons/start-button.svg" alt="vitamin" />
+          <h1>AUTOMATIZACIÓN Y CRM</h1>
+          <p>
+            Desarrollamos e Implementamos plataformas de e-commerce,
+            fidelización, Apps, people analytics y CRM.
+          </p>
+        </div>
+        <div class="whatWeDoItem">
+          <img src="./images/icons/money.svg" alt="vitamin" />
+          <h1>CONVERSION RATE OPTIMIZATION</h1>
+          <p>
+            Innovamos mediante técnicas de Inbound Marketing para lograr la
+            mejor perfomance, leads calificados y Boost sales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- team -->
+
+    <section id="team" class="teamContainer">
+      <h1 class="mainTitle mainTitleTeam">
+        Team de profesionales Naranja & Media
+      </h1>
+      <h2 class="teamLegend">
+        "El futuro no está por venir... ya llegó para quedarse en un formato
+        100% Digital"
+      </h2>
+      <p class="teamLegendAutors">Philip Kotler + Naranja & Media</p>
+      <div id="owl-one" class="owl-carousel owl-theme owl-loaded carousel">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item carouselItem">
+              <div class="teamMember">
+                <div class="orangeCircle">
+                  <img
+                    class="teamMemberAvatar"
+                    src="./images/avatar.jpg"
+                    alt="avatar"
+                  />
+                </div>
+                <h1 class="teamMemberTextOne">
+                  Especialista Publicidad y Growth Marketing
+                </h1>
+                <h1 class="teamMemberTextTwo">DIANA JUNCO</h1>
+                <p class="teamMemberTextThree">
+                  Founder & Director Colombia
+                </p>
+              </div>
+            </div>
+            <div class="owl-item carouselItem">
+              <div class="teamMember">
+                <div class="orangeCircle">
+                  <img
+                    class="teamMemberAvatar"
+                    src="./images/avatar.jpg"
+                    alt="avatar"
+                  />
+                </div>
+                <h1 class="teamMemberTextOne">
+                  Especialista Publicidad y Growth Marketing
+                </h1>
+                <h1 class="teamMemberTextTwo">DIANA JUNCO</h1>
+                <p class="teamMemberTextThree">
+                  Founder & Director Colombia
+                </p>
+              </div>
+            </div>
+            <div class="owl-item carouselItem">
+              <div class="teamMember">
+                <div class="orangeCircle">
+                  <img
+                    class="teamMemberAvatar"
+                    src="./images/avatar.jpg"
+                    alt="avatar"
+                  />
+                </div>
+                <h1 class="teamMemberTextOne">
+                  Especialista Publicidad y Growth Marketing
+                </h1>
+                <h1 class="teamMemberTextTwo">DIANA JUNCO</h1>
+                <p class="teamMemberTextThree">
+                  Founder & Director Colombia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- casos de exito -->
+
+    <section id="successStories" class="successStoriesContainer columnCentered">
+      <h1 class="successStoriesTitle">CASOS DE EXITO</h1>
+      <div id="owl-two" class="owl-carousel owl-theme owl-loaded carousel">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item carouselItem">
+              <div>
+                <h1>
+                  Logre transformar y desarrollar canales de venta digitales
+                  efectivos para mi tienda de ropa, además del acompañamiento
+                  para lanzar las campañas de nuevos productos.
+                </h1>
+                <hr />
+                <h1>NOELIA GROTTESCHI</h1>
+                <p>Fundadora de cherrymint.com.ar</p>
+              </div>
+            </div>
+            <div class="owl-item carouselItem">
+              <div>
+                <h1>
+                  Logre transformar y desarrollar canales de venta digitales
+                  efectivos para mi tienda de ropa, además del acompañamiento
+                  para lanzar las campañas de nuevos productos.
+                </h1>
+                <hr />
+                <h1>NOELIA GROTTESCHI</h1>
+                <p>Fundadora de cherrymint.com.ar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <script src="./scripts/owlcarousel.js"></script>
+    <script src="./scripts/scroll.js"></script>
+  </body>
 </html>
