@@ -15,6 +15,13 @@
       rel="stylesheet"
       href="./owlcarousel/assets/owl.theme.default.min.css"
     />
+<!--    <link-->
+<!--      rel="stylesheet"-->
+<!--      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"-->
+<!--    />-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -33,10 +40,10 @@
           <a href=""><i class="fab fa-instagram"></i></a>
         </ul>
       </nav>
-      <div class="heroContainer">
+      <div class="heroContainer " data-aos="fade-in">
         <img src="images/ALBERT.png" class="albertImg" alt="albert-image" />
         <div class="titleHeader">
-          <h1 class="title"><b>Naranja & media</b></h1>
+          <h1 class="title"><b>Naranja & Media</b></h1>
           <h2 class="subtitle">growth marketing</h2>
         </div>
         <a class="downArrow" href="#startup">
@@ -85,7 +92,7 @@
       <div class="whatWeDoItemList">
         <div class="whatWeDoItem">
           <img src="./images/icons/vitamin.svg" alt="vitamin" />
-          <h1>CAMPAÑAS DIGITALES</h1>
+          <h1 class="whatWeDoItem-title">CAMPAÑAS DIGITALES</h1>
           <p>
             Creamos estrategias disruptivas usando los mejores formatos y
             canales para los segmentos B2B y B2C.
@@ -93,7 +100,7 @@
         </div>
         <div class="whatWeDoItem">
           <img src="./images/icons/marketing.svg" alt="vitamin" />
-          <h1>COMUNICACIÓN DIGITAL</h1>
+          <h1 class="whatWeDoItem-title">COMUNICACIÓN DIGITAL</h1>
           <p>
             Realizamos contenidos ágiles, especializados y social media para tu
             marca, producto o servicio.
@@ -101,7 +108,7 @@
         </div>
         <div class="whatWeDoItem">
           <img src="./images/icons/start-button.svg" alt="vitamin" />
-          <h1>AUTOMATIZACIÓN Y CRM</h1>
+          <h1 class="whatWeDoItem-title">AUTOMATIZACIÓN Y CRM</h1>
           <p>
             Desarrollamos e Implementamos plataformas de e-commerce,
             fidelización, Apps, people analytics y CRM.
@@ -109,7 +116,7 @@
         </div>
         <div class="whatWeDoItem">
           <img src="./images/icons/money.svg" alt="vitamin" />
-          <h1>CONVERSION RATE OPTIMIZATION</h1>
+          <h1 class="whatWeDoItem-title">CONVERSION RATE OPTIMIZATION</h1>
           <p>
             Innovamos mediante técnicas de Inbound Marketing para lograr la
             mejor perfomance, leads calificados y Boost sales.
@@ -193,33 +200,33 @@
 
     <!-- casos de exito -->
 
-    <section id="successStories" class="successStoriesContainer columnCentered">
+    <section data-aos="fade-in" id="successStories" class="successStoriesContainer columnCentered">
       <h1 class="successStoriesTitle">CASOS DE EXITO</h1>
       <div id="owl-two" class="owl-carousel owl-theme owl-loaded carousel">
         <div class="owl-stage-outer">
           <div class="owl-stage">
             <div class="owl-item carouselItem">
               <div>
-                <h1>
+                <h1 class="succesItem-text">
                   Logre transformar y desarrollar canales de venta digitales
                   efectivos para mi tienda de ropa, además del acompañamiento
                   para lanzar las campañas de nuevos productos.
                 </h1>
                 <hr />
-                <h1>NOELIA GROTTESCHI</h1>
-                <p>Fundadora de cherrymint.com.ar</p>
+                <h1 class="succesItem-name">NOELIA GROTTESCHI</h1>
+                <p class="succesItem-job">Fundadora de cherrymint.com.ar</p>
               </div>
             </div>
             <div class="owl-item carouselItem">
               <div>
-                <h1>
+                <h1 class="succesItem-text">
                   Logre transformar y desarrollar canales de venta digitales
                   efectivos para mi tienda de ropa, además del acompañamiento
                   para lanzar las campañas de nuevos productos.
                 </h1>
                 <hr />
-                <h1>NOELIA GROTTESCHI</h1>
-                <p>Fundadora de cherrymint.com.ar</p>
+                <h1 class="succesItem-name">NOELIA GROTTESCHI</h1>
+                <p class="succesItem-job">Fundadora de cherrymint.com.ar</p>
               </div>
             </div>
           </div>
@@ -229,7 +236,7 @@
 
     <!-- nuestros clientes -->
 
-    <section id="customers" class="customersContainer columnCentered">
+    <section data-aos="fade-in" id="customers" class="customersContainer columnCentered">
       <h1 class="mainTitle customersMainTitle">
         Algunos de nuestros clientes
       </h1>
@@ -295,5 +302,12 @@
     <script src="./owlcarousel/owl.carousel.min.js"></script>
     <script src="./scripts/owlcarousel.js"></script>
     <script src="./scripts/scroll.js"></script>
+    <script>
+      AOS.init({
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 3000, // values from 0 to 3000, with step 50ms
+      });
+    </script>
   </body>
 </html>

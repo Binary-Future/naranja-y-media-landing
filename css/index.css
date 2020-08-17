@@ -4,6 +4,31 @@
 @import "fontawesome/v4-shims.min.css";
 @import "fontawesome/all.min.css";
 
+@font-face {
+  font-family: 'cocogose';
+  src: url('../fonts/cocogoose/Cocogoose Pro Light-trial.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'raleway extrabold';
+  src: url('../fonts/raleway/Raleway-ExtraBold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'raleway bold';
+  src: url('../fonts/raleway/Raleway-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'raleway light';
+  src: url('../fonts/raleway/Raleway-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'acaslom';
+  src: url('../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Regular') format("truetype");
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -24,8 +49,9 @@ body {
 
 .mainTitle {
   margin: 10px;
-  font-size: 60px;
   color: #3b3d40;
+  font-family: 'raleway extrabold';
+  font-size: 52px !important;
 }
 
 .columnCentered {
@@ -47,6 +73,9 @@ nav {
 }
 
 .navItemns {
+  font-family: 'raleway light';
+  font-weight: 600;
+  font-size: 12px;
   display: flex;
   justify-content: start;
 }
@@ -90,17 +119,20 @@ nav {
   flex-direction: column;
   align-items: center;
   color: white;
+  font-family: cocogose;
 }
 
 .title {
   margin: 0;
-  font-size: 60px;
+  font-size: 52px;
 }
 
 .subtitle {
   margin: 0;
   margin-bottom: 10%;
   font-size: 30px;
+  color: #fed8d5;
+  font-weight: lighter;
 }
 
 .downArrow {
@@ -135,14 +167,20 @@ nav {
 .startupLegend {
   margin-bottom: 5%;
   width: 60%;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
+  font-family: 'acaslom';
+  font-weight: 500;
+  color: #666666;
 }
 
 .startupText {
   display: flex;
   justify-content: start;
   width: 80%;
+  font-family: 'acaslom';
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .startupText p {
@@ -178,8 +216,10 @@ nav {
 
 .whatWeDoLegend {
   width: 45%;
-  font-size: 20px;
-  color: gray;
+  font-size: 24px;
+  font-family: 'acaslom';
+  font-weight: 500;
+  color: #666666;
 }
 
 .whatWeDoItemList {
@@ -194,16 +234,19 @@ nav {
 }
 
 .whatWeDoItem h1 {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: raleway;
+  font-weight: 500;
+  color: #3b3d40;
 }
 
 .whatWeDoItem p {
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
-  color: gray;
+  color: #73787b;
 }
 
 .whatWeDoItem img {
@@ -230,6 +273,8 @@ nav {
   color: #fd644f;
   width: 50%;
   text-align: center;
+  font-family: acaslom;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
@@ -264,22 +309,28 @@ nav {
 }
 
 .teamMemberTextOne {
-  color: gray;
-  font-size: 15px;
+  color: #656b6f;
+  font-size: 16px;
   width: 70%;
+  font-weight: 500;
+  font-family: acaslom;
 }
 
 .teamMemberTextTwo {
-  color: black;
-  font-size: 13px;
+  color: #3c3d41;
+  font-size: 12px;
   margin-bottom: 0;
+  font-family: 'raleway extrabold';
+  font-weight: 600;
 }
 
 .teamMemberTextThree {
-  color: gray;
+  color: #656b6f;
   font-size: 13px;
   margin-top: 0;
   margin-bottom: 10%;
+  font-family: acaslom;
+  font-weight: 500;
 }
 
 /* casos de exito */
@@ -291,11 +342,29 @@ nav {
 }
 
 .successStoriesTitle {
-  font-size: 13px;
   margin-top: 100px;
   margin-bottom: 50px;
+  font-family: 'raleway light';
+  font-size: 13px;
 }
 
+.succesItem-text {
+  font-family: acaslom;
+  font-weight: 500;
+}
+
+.succesItem-name {
+  font-family: 'raleway extrabold';
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.succesItem-job {
+  font-family: 'acaslom';
+  font-weight: 500;
+  font-size: 14px;
+  color: #fed8d5;
+}
 /* clientes */
 
 .customersMainTitle {
@@ -325,9 +394,11 @@ nav {
 }
 
 .letsTalkText {
-  color: white;
-  font-size: 20px;
+  color: #fed8d5;
+  font-size: 24px;
   margin-top: 0;
+  font-family: acaslom;
+  font-weight: 500;
 }
 
 .formInput {
@@ -338,11 +409,25 @@ nav {
   margin: 2%;
   background-color: #fd7b69;
   width: 300px;
+  color: white;
+  font-family: "raleway light";
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .formInput::placeholder {
   color: white;
   padding: 10px;
+  font-family: "raleway light";
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.formInput:focus {
+  color: white;
+  font-family: "raleway light";
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .formButton {
@@ -353,12 +438,16 @@ nav {
   color: #fd644f;
   margin: 2%;
   width: 100px;
+  font-family: 'raleway light';
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
 }
 
 /* footer */
 
 .footerContainer {
-  background-color: black;
+  background-color: #000000;
 }
 
 .firstLineFooter {
@@ -370,6 +459,12 @@ nav {
   padding-left: 10%;
 }
 
+.firstLineFooter > h1 {
+  font-family: 'raleway bold';
+  font-weight: 600;
+  font-size: 16pt;
+}
+
 .footerInfoTextPosition {
   display: flex;
   justify-content: center;
@@ -377,7 +472,10 @@ nav {
 
 .footerInfoText {
   margin: 20px;
-  color: gray;
+  color: #747474;
+  font-family: acaslom;
+  font-weight: 500;
+  font-size: 15pt;
 }
 
 .footerInfoText p {
@@ -387,9 +485,11 @@ nav {
 .footerBrand {
   display: flex;
   justify-content: flex-end;
-  color: gray;
+  color: #747474;
   padding-right: 10%;
-  font-size: 8px;
+  font-family: acaslom;
+  font-weight: 500;
+  font-size: 10px;
 }
 
 /* responsive */
