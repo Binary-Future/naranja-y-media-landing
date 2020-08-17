@@ -296,6 +296,102 @@ nav {
   margin-bottom: 50px;
 }
 
+/* clientes */
+
+.customersMainTitle {
+  margin-top: 5%;
+}
+
+.customersGrid {
+  padding: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.customersGrid img {
+  width: 18%;
+}
+
+/* hablemos */
+
+.letsTalkContainer {
+  background-color: tomato;
+  padding-bottom: 5%;
+}
+
+.letsTalkMainTitle {
+  color: white;
+  margin-top: 5%;
+}
+
+.letsTalkText {
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.formInput {
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  height: 30px;
+  margin: 2%;
+  background-color: #fd7b69;
+  width: 300px;
+}
+
+.formInput::placeholder {
+  color: white;
+  padding: 10px;
+}
+
+.formButton {
+  border: 0px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: white;
+  color: #fd644f;
+  margin: 2%;
+  width: 100px;
+}
+
+/* footer */
+
+.footerContainer {
+  background-color: black;
+}
+
+.firstLineFooter {
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.footerInfoTextPosition {
+  display: flex;
+  justify-content: center;
+}
+
+.footerInfoText {
+  margin: 20px;
+  color: gray;
+}
+
+.footerInfoText p {
+  margin: 0px;
+}
+
+.footerBrand {
+  display: flex;
+  justify-content: flex-end;
+  color: gray;
+  padding-right: 10%;
+  font-size: 8px;
+}
+
 /* responsive */
 
 /* Small devices (landscape phones, 576px and up)
