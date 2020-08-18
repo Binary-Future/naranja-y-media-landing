@@ -5,28 +5,30 @@
 @import "fontawesome/all.min.css";
 
 @font-face {
-  font-family: 'cocogose';
-  src: url('../fonts/cocogoose/Cocogoose Pro Light-trial.ttf') format("truetype");
+  font-family: "cocogose";
+  src: url("../fonts/cocogoose/Cocogoose Pro Light-trial.ttf")
+    format("truetype");
 }
 
 @font-face {
-  font-family: 'raleway extrabold';
-  src: url('../fonts/raleway/Raleway-ExtraBold.ttf') format("truetype");
+  font-family: "raleway extrabold";
+  src: url("../fonts/raleway/Raleway-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'raleway bold';
-  src: url('../fonts/raleway/Raleway-Bold.ttf') format("truetype");
+  font-family: "raleway bold";
+  src: url("../fonts/raleway/Raleway-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'raleway light';
-  src: url('../fonts/raleway/Raleway-Light.ttf') format("truetype");
+  font-family: "raleway light";
+  src: url("../fonts/raleway/Raleway-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'acaslom';
-  src: url('../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Regular') format("truetype");
+  font-family: "acaslom";
+  src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Regular")
+    format("truetype");
 }
 
 html,
@@ -50,7 +52,7 @@ body {
 .mainTitle {
   margin: 10px;
   color: #3b3d40;
-  font-family: 'raleway extrabold';
+  font-family: "raleway extrabold";
   font-size: 52px !important;
 }
 
@@ -73,11 +75,15 @@ nav {
 }
 
 .navItemns {
-  font-family: 'raleway light';
+  font-family: "raleway light";
   font-weight: 600;
   font-size: 12px;
   display: flex;
   justify-content: start;
+}
+
+.navItemns li a:hover {
+  text-decoration-line: underline;
 }
 
 .navItemns li {
@@ -154,22 +160,12 @@ nav {
   background-color: #f9f9f9;
 }
 
-.borderIcon {
-  margin-top: 5%;
-  width: 70%;
-  max-width: 120px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: tomato;
-  border-radius: 50%;
-}
-
 .startupLegend {
   margin-bottom: 5%;
   width: 60%;
   font-size: 24px;
   text-align: center;
-  font-family: 'acaslom';
+  font-family: "acaslom";
   font-weight: 500;
   color: #666666;
 }
@@ -178,7 +174,7 @@ nav {
   display: flex;
   justify-content: start;
   width: 80%;
-  font-family: 'acaslom';
+  font-family: "acaslom";
   font-weight: 500;
   font-size: 20px;
 }
@@ -197,16 +193,6 @@ nav {
   align-items: center;
 }
 
-.borderIconWhatWeDo {
-  margin-top: 5%;
-  width: 70%;
-  max-width: 120px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: tomato;
-  border-radius: 50%;
-}
-
 .borderIconWhatWeDo img {
   width: 80%;
   display: block;
@@ -217,7 +203,7 @@ nav {
 .whatWeDoLegend {
   width: 45%;
   font-size: 24px;
-  font-family: 'acaslom';
+  font-family: "acaslom";
   font-weight: 500;
   color: #666666;
 }
@@ -320,7 +306,7 @@ nav {
   color: #3c3d41;
   font-size: 12px;
   margin-bottom: 0;
-  font-family: 'raleway extrabold';
+  font-family: "raleway extrabold";
   font-weight: 600;
 }
 
@@ -344,7 +330,7 @@ nav {
 .successStoriesTitle {
   margin-top: 100px;
   margin-bottom: 50px;
-  font-family: 'raleway light';
+  font-family: "raleway light";
   font-size: 13px;
 }
 
@@ -354,17 +340,18 @@ nav {
 }
 
 .succesItem-name {
-  font-family: 'raleway extrabold';
+  font-family: "raleway extrabold";
   font-weight: 500;
   font-size: 13px;
 }
 
 .succesItem-job {
-  font-family: 'acaslom';
+  font-family: "acaslom";
   font-weight: 500;
   font-size: 14px;
   color: #fed8d5;
 }
+
 /* clientes */
 
 .customersMainTitle {
@@ -438,10 +425,15 @@ nav {
   color: #fd644f;
   margin: 2%;
   width: 100px;
-  font-family: 'raleway light';
+  font-family: "raleway light";
   font-weight: 600;
   font-size: 17px;
   cursor: pointer;
+}
+
+.formButton:hover {
+  background-color: #fd7b69;
+  color: white;
 }
 
 /* footer */
@@ -460,7 +452,7 @@ nav {
 }
 
 .firstLineFooter > h1 {
-  font-family: 'raleway bold';
+  font-family: "raleway bold";
   font-weight: 600;
   font-size: 16pt;
 }
@@ -494,14 +486,180 @@ nav {
 
 /* responsive */
 
-/* Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+@media (max-width: 450px) {
+  .mainTitle {
+    margin: 10px;
+    color: #3b3d40;
+    font-family: "raleway extrabold";
+    font-size: 35px !important;
+  }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+  /* hero */
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+  nav {
+    display: none;
+  }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } */
+  .albertImg {
+    margin-top: 70%;
+    width: 50%;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .subtitle {
+    margin: 0;
+    margin-bottom: 10%;
+    font-size: 20px;
+    color: #fed8d5;
+    font-weight: lighter;
+  }
+
+  .downArrow img {
+    width: 40%;
+  }
+
+  /* startup */
+
+  .orangeCircle {
+    margin-top: 5%;
+    width: 50%;
+    max-width: 90px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: tomato;
+    border-radius: 50%;
+  }
+
+  .startupLegend {
+    margin-bottom: 5%;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    font-family: "acaslom";
+    font-weight: 500;
+    color: #666666;
+  }
+
+  .startupText {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-family: "acaslom";
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  /* lo que hacemos */
+
+  .whatWeDoLegend {
+    width: 80%;
+    font-size: 20px;
+    font-family: "acaslom";
+    font-weight: 500;
+    color: #666666;
+    text-align: center;
+  }
+
+  .whatWeDoItemList {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .whatWeDoItem {
+    width: 50%;
+    max-width: 130px;
+  }
+
+  /* team */
+
+  .mainTitleTeam {
+    width: 80%;
+    text-align: center;
+  }
+
+  .teamLegend {
+    color: #fd644f;
+    width: 80%;
+    text-align: center;
+    font-family: acaslom;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .carousel {
+    max-width: 90%;
+  }
+
+  /* casos de exito */
+
+  .succesItem {
+    max-width: 80%;
+  }
+
+  /* clientes */
+
+  .customersMainTitle {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .customersGrid {
+    display: flex;
+    flex-flow: wrap;
+    padding: 20px !important;
+    margin-bottom: 10%;
+  }
+
+  .customersGrid img {
+    width: 50%;
+  }
+
+  /* hablemos */
+
+  .letsTalkMainTitle {
+    color: white;
+    margin-top: 5%;
+  }
+
+  .letsTalkText {
+    color: #fed8d5;
+    font-size: 24px;
+    margin-top: 0;
+    font-family: acaslom;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  /* footer */
+
+  .footerInfoTextPosition {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerInfoText {
+    margin: 20px;
+    color: #747474;
+    font-family: acaslom;
+    font-weight: 500;
+    font-size: 12pt;
+  }
+
+  .footerInfoText p {
+    margin: 0px;
+    text-align: center;
+  }
+
+  .footerBrand {
+    display: flex;
+    justify-content: center;
+    color: #747474;
+    font-family: acaslom;
+    font-weight: 500;
+    font-size: 7px;
+  }
+}

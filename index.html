@@ -15,12 +15,8 @@
       rel="stylesheet"
       href="./owlcarousel/assets/owl.theme.default.min.css"
     />
-<!--    <link-->
-<!--      rel="stylesheet"-->
-<!--      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"-->
-<!--    />-->
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
@@ -40,7 +36,7 @@
           <a href=""><i class="fab fa-instagram"></i></a>
         </ul>
       </nav>
-      <div class="heroContainer " data-aos="fade-in">
+      <div class="heroContainer" data-aos="fade-in">
         <img src="images/ALBERT.png" class="albertImg" alt="albert-image" />
         <div class="titleHeader">
           <h1 class="title"><b>Naranja & Media</b></h1>
@@ -64,7 +60,7 @@
         Somos el Partner ideal de aquellas organizaciones que buscan
         transformarse y ser los Reyes del Marketing Digital.
       </p>
-      <div class="startupText">
+      <div class="startupText" data-aos="fade-in">
         <p>
           Creamos Estrategias usando los mejores aceleradores de Inbound
           Marketing, generando propuestas de valor disruptivas que logren
@@ -82,14 +78,14 @@
     <!-- lo que hacemos -->
 
     <section id="whatWeDo" class="whatWeDoContainer">
-      <div class="orangeCircle">
+      <div class="orangeCircle borderIconWhatWeDo">
         <img src="./images/icons/app.svg" alt="corona" />
       </div>
       <h1 class="mainTitle">Lo que hacemos</h1>
       <p class="whatWeDoLegend">
         Nutrimos tu marca de manera creativa en los siguientes frentes:
       </p>
-      <div class="whatWeDoItemList">
+      <div class="whatWeDoItemList" data-aos="fade-in">
         <div class="whatWeDoItem">
           <img src="./images/icons/vitamin.svg" alt="vitamin" />
           <h1 class="whatWeDoItem-title">CAMPAÑAS DIGITALES</h1>
@@ -136,7 +132,11 @@
         100% Digital"
       </h2>
       <p class="teamLegendAutors">Philip Kotler + Naranja & Media</p>
-      <div id="owl-one" class="owl-carousel owl-theme owl-loaded carousel">
+      <div
+        id="owl-one"
+        class="owl-carousel owl-theme owl-loaded carousel"
+        data-aos="fade-in"
+      >
         <div class="owl-stage-outer">
           <div class="owl-stage">
             <div class="owl-item carouselItem">
@@ -167,11 +167,11 @@
                   />
                 </div>
                 <h1 class="teamMemberTextOne">
-                  Especialista Publicidad y Growth Marketing
+                  Especialista en Marketing Estratégico
                 </h1>
-                <h1 class="teamMemberTextTwo">DIANA JUNCO</h1>
+                <h1 class="teamMemberTextTwo">DIEGO CASTRO</h1>
                 <p class="teamMemberTextThree">
-                  Founder & Director Colombia
+                  Director Argentina
                 </p>
               </div>
             </div>
@@ -185,11 +185,29 @@
                   />
                 </div>
                 <h1 class="teamMemberTextOne">
-                  Especialista Publicidad y Growth Marketing
+                  Lic. en Comercio Internacional
                 </h1>
-                <h1 class="teamMemberTextTwo">DIANA JUNCO</h1>
+                <h1 class="teamMemberTextTwo">NAHUEL PAILOS</h1>
                 <p class="teamMemberTextThree">
-                  Founder & Director Colombia
+                  Sales Director Argentina
+                </p>
+              </div>
+            </div>
+            <div class="owl-item carouselItem">
+              <div class="teamMember">
+                <div class="orangeCircle">
+                  <img
+                    class="teamMemberAvatar"
+                    src="./images/avatar.jpg"
+                    alt="avatar"
+                  />
+                </div>
+                <h1 class="teamMemberTextOne">
+                  Lic. En Publicidad y Diseño
+                </h1>
+                <h1 class="teamMemberTextTwo">Laura Guayara</h1>
+                <p class="teamMemberTextThree">
+                  Art Director
                 </p>
               </div>
             </div>
@@ -200,13 +218,17 @@
 
     <!-- casos de exito -->
 
-    <section data-aos="fade-in" id="successStories" class="successStoriesContainer columnCentered">
+    <section id="successStories" class="successStoriesContainer columnCentered">
       <h1 class="successStoriesTitle">CASOS DE EXITO</h1>
-      <div id="owl-two" class="owl-carousel owl-theme owl-loaded carousel">
+      <div
+        id="owl-two"
+        class="owl-carousel owl-theme owl-loaded carousel"
+        data-aos="fade-in"
+      >
         <div class="owl-stage-outer">
           <div class="owl-stage">
             <div class="owl-item carouselItem">
-              <div>
+              <div class="succesItem">
                 <h1 class="succesItem-text">
                   Logre transformar y desarrollar canales de venta digitales
                   efectivos para mi tienda de ropa, además del acompañamiento
@@ -218,15 +240,15 @@
               </div>
             </div>
             <div class="owl-item carouselItem">
-              <div>
+              <div class="succesItem">
                 <h1 class="succesItem-text">
-                  Logre transformar y desarrollar canales de venta digitales
-                  efectivos para mi tienda de ropa, además del acompañamiento
-                  para lanzar las campañas de nuevos productos.
+                  Gracias a la estrategia de Growth Marketing logramos conectar
+                  a más de 10.000 personas en tiempo record y sumar apoyo
+                  económico para el desarrollo de campaña con Embotéllate.
                 </h1>
                 <hr />
-                <h1 class="succesItem-name">NOELIA GROTTESCHI</h1>
-                <p class="succesItem-job">Fundadora de cherrymint.com.ar</p>
+                <h1 class="succesItem-name">WILLIAM VERDUGO</h1>
+                <p class="succesItem-job">CEO de Embotéllate</p>
               </div>
             </div>
           </div>
@@ -236,21 +258,61 @@
 
     <!-- nuestros clientes -->
 
-    <section data-aos="fade-in" id="customers" class="customersContainer columnCentered">
+    <section id="customers" class="customersContainer columnCentered">
       <h1 class="mainTitle customersMainTitle">
         Algunos de nuestros clientes
       </h1>
       <div class="customersGrid">
-        <img src="./images/logos-clientes/accusys.png" alt="" />
-        <img src="./images/logos-clientes/camara-de-comercio.png" alt="" />
-        <img src="./images/logos-clientes/cherry.png" alt="" />
-        <img src="./images/logos-clientes/colperu.png" alt="" />
-        <img src="./images/logos-clientes/embotellate.png" alt="" />
-        <img src="./images/logos-clientes/otro sur.png" alt="" />
-        <img src="./images/logos-clientes/prana.png" alt="" />
-        <img src="./images/logos-clientes/rosen.png" alt="" />
-        <img src="./images/logos-clientes/uniempresarial.png" alt="" />
-        <img src="./images/logos-clientes/zona-franca.png" alt="" />
+        <img
+          data-aos="fade-in"
+          src="./images/logos-clientes/accusys.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-in"
+          src="./images/logos-clientes/camara-de-comercio.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-in"
+          src="./images/logos-clientes/cherry.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-in"
+          src="./images/logos-clientes/colperu.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-in"
+          src="./images/logos-clientes/embotellate.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-in"
+          src="./images/logos-clientes/zona-franca.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-in"
+          src="./images/logos-clientes/otro sur.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-in"
+          src="./images/logos-clientes/rosen.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-in"
+          src="./images/logos-clientes/uniempresarial.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-in"
+          src="./images/logos-clientes/prana.png"
+          alt=""
+        />
       </div>
     </section>
 
@@ -302,12 +364,6 @@
     <script src="./owlcarousel/owl.carousel.min.js"></script>
     <script src="./scripts/owlcarousel.js"></script>
     <script src="./scripts/scroll.js"></script>
-    <script>
-      AOS.init({
-        offset: 120, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 3000, // values from 0 to 3000, with step 50ms
-      });
-    </script>
+    <script src="./scripts/aos.js"></script>
   </body>
 </html>
