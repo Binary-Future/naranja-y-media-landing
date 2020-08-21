@@ -206,6 +206,7 @@ nav {
   font-family: "acaslom";
   font-weight: 500;
   color: #666666;
+  text-align: center;
 }
 
 .whatWeDoItemList {
@@ -241,6 +242,62 @@ nav {
   width: 50%;
 }
 
+/* apps */
+
+.appsContainer {
+  background-image: url(../images/apps/pieza-web.gif);
+  background-size: cover;
+  height: 700px;
+}
+
+.appsTextContainer {
+  color: white;
+  width: 35%;
+  margin-left: 8%;
+  padding-top: 5%;
+  text-align: left;
+}
+
+.appsTitle {
+  color: white;
+  font-size: 40px !important;
+  margin: 0;
+}
+
+.appsText {
+  font-family: "acaslom";
+}
+
+/* fidelizacion */
+
+.loyaltyContainer {
+  background-color: #f9f9f9;
+  display: flex;
+  padding: 3%;
+}
+
+.loyaltyContainer img {
+  width: 80%;
+  margin-left: 5%;
+}
+
+.loyaltyTextContainer {
+  position: absolute;
+  width: 30%;
+  left: 60%;
+}
+
+.loyaltyTitle {
+  color: #3b3d40;
+  font-family: "raleway extrabold";
+  font-size: 200% !important;
+}
+
+.loyaltyText {
+  color: #3b3d40;
+  font-family: "acaslom";
+}
+
 /* team */
 
 .teamContainer {
@@ -271,7 +328,7 @@ nav {
 }
 
 .carousel {
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .carouselItem {
@@ -284,14 +341,9 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.teamMember:hover {
+  width: 200px;
+  height: 280px;
   box-shadow: 0 0 5px gray;
-}
-
-.teamMemberAvatar {
-  border-radius: 50%;
 }
 
 .teamMemberTextOne {
@@ -368,10 +420,18 @@ nav {
   width: 18%;
 }
 
+/* footer image */
+
+.backgroundFooter {
+  background: url(../images/footer-background.png);
+  background-color: tomato;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
 /* hablemos */
 
 .letsTalkContainer {
-  background-color: tomato;
   padding-bottom: 5%;
 }
 
@@ -381,7 +441,7 @@ nav {
 }
 
 .letsTalkText {
-  color: #fed8d5;
+  color: white;
   font-size: 24px;
   margin-top: 0;
   font-family: acaslom;
@@ -440,6 +500,7 @@ nav {
 
 .footerContainer {
   background-color: #000000;
+  opacity: 0.9;
 }
 
 .firstLineFooter {
@@ -486,7 +547,7 @@ nav {
 
 /* responsive */
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .mainTitle {
     margin: 10px;
     color: #3b3d40;
@@ -572,6 +633,52 @@ nav {
   .whatWeDoItem {
     width: 50%;
     max-width: 130px;
+  }
+
+  /* apps */
+
+  .appsContainer {
+    background-image: url(../images/apps/mobile-web-aninamdo-app.gif);
+    background-size: cover;
+    height: 700px;
+  }
+
+  .appsTextContainer {
+    color: white;
+    width: 90%;
+    margin-left: 8%;
+    padding-top: 5%;
+    text-align: left;
+  }
+
+  .appsTitle {
+    color: white;
+    font-size: 30px !important;
+    margin: 0;
+  }
+
+  .appsText {
+    font-family: "acaslom";
+    font-size: 15px;
+  }
+
+  /* fidelizacion */
+
+  .loyaltyContainer {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3%;
+  }
+
+  .loyaltyContainer img {
+    width: 100%;
+  }
+
+  .loyaltyTextContainer {
+    position: relative;
+    width: 80%;
+    left: 10%;
   }
 
   /* team */
