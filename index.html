@@ -347,16 +347,28 @@
         <p class="letsTalkText">
           Déjanos tus datos y nos comunicaremos contigo a la brevedad
         </p>
-        <form action="" class="columnCentered">
-          <input class="formInput" type="text" placeholder="Tu nombre" />
-          <input class="formInput" type="email" placeholder="Aquí tu email" />
-          <input class="formInput" type="tel" placeholder="Móvil" />
+        <form class="columnCentered">
+          <input id="nombre" class="formInput" type="text" required placeholder="Tu nombre" />
+          <input id="email" class="formInput" type="email" required placeholder="Aquí tu email" />
+          <input id="movil" class="formInput" type="tel"  required placeholder="Móvil" />
           <input
+            id="mensaje"
             class="formInput"
             type="text"
+            required
             placeholder="Déjanos tu mensaje"
           />
-          <button class="formButton">Enviar</button>
+          <small id="errorMessage" class="error-message d-none">Todos los campos son obligatorios</small>
+          <button id="formButton" class="formButton">
+            <div id="send-status" class="d-none">
+              <i class="fas fa-circle-notch fa-spin"></i> Enviando...
+            </div>
+
+            <div id="send">
+              Enviar
+            </div>
+          </button>
+
         </form>
       </section>
 
@@ -393,5 +405,6 @@
     <script src="./scripts/owlcarousel.js"></script>
     <script src="./scripts/scroll.js"></script>
     <script src="./scripts/aos.js"></script>
+    <script src="./scripts/form.js"></script>
   </body>
 </html>

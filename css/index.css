@@ -484,7 +484,7 @@ nav {
   background-color: white;
   color: #fd644f;
   margin: 2%;
-  width: 100px;
+  width: 150px;
   font-family: "raleway light";
   font-weight: 600;
   font-size: 17px;
@@ -543,6 +543,14 @@ nav {
   font-family: acaslom;
   font-weight: 500;
   font-size: 10px;
+}
+
+.d-none {
+  display: none;
+}
+
+.error-message {
+  color: white;
 }
 
 /* responsive */
