@@ -1,0 +1,838 @@
+@import "fontawesome/solid.min.css";
+@import "fontawesome/brands.min.css";
+@import "fontawesome/regular.min.css";
+@import "fontawesome/v4-shims.min.css";
+@import "fontawesome/all.min.css";
+
+@font-face {
+  font-family: "cocogose";
+  src: url("../fonts/cocogoose/Cocogoose Pro Light-trial.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "raleway extrabold";
+  src: url("../fonts/raleway/Raleway-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "raleway bold";
+  src: url("../fonts/raleway/Raleway-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "raleway light";
+  src: url("../fonts/raleway/Raleway-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "acaslom";
+  src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Regular")
+    format("truetype");
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+.wspButton {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  opacity: 0.5;
+  padding: 1%;
+  z-index: 10;
+}
+
+.wspOrangeCircle {
+  margin-top: 5%;
+  width: 70%;
+  max-width: 50px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: tomato;
+  border-radius: 50%;
+}
+
+.wspButton a i {
+  color: white;
+  font-size: 32px;
+  margin: 5px;
+}
+
+/* generic */
+
+.orangeCircle {
+  margin-top: 5%;
+  width: 70%;
+  max-width: 120px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: tomato;
+  border-radius: 50%;
+}
+
+.mainTitle {
+  margin: 10px;
+  color: #3b3d40;
+  font-family: "raleway extrabold";
+  font-size: 52px !important;
+}
+
+.columnCentered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* nav */
+
+header {
+  background-color: #fd644f;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.navItemns {
+  font-family: "raleway light";
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  justify-content: start;
+}
+
+.navItemns li a:hover {
+  text-decoration-line: underline;
+}
+
+.navItemns li {
+  margin: 20px;
+  list-style: none;
+}
+
+.navItemns li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navSocial {
+  display: flex;
+  justify-content: end;
+}
+
+.navSocial a i {
+  color: white;
+  font-size: 32px;
+  margin: 5px;
+}
+
+/* hero */
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.albertImg {
+  margin-top: 5%;
+  width: 20%;
+}
+
+.titleHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: cocogose;
+}
+
+.title {
+  margin: 0;
+  font-size: 52px;
+}
+
+.subtitle {
+  margin: 0;
+  margin-bottom: 10%;
+  font-size: 30px;
+  color: #fed8d5;
+  font-weight: lighter;
+}
+
+.downArrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.downArrow img {
+  width: 60%;
+}
+
+/* startup */
+
+.startupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.startupLegend {
+  margin-bottom: 5%;
+  width: 60%;
+  font-size: 24px;
+  text-align: center;
+  font-family: "acaslom";
+  font-weight: 500;
+  color: #666666;
+}
+
+.startupText {
+  display: flex;
+  justify-content: start;
+  width: 80%;
+  font-family: "acaslom";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.startupText p {
+  margin: 2%;
+  color: gray;
+  margin-bottom: 5%;
+}
+
+/* Lo que hacemos */
+
+.whatWeDoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.borderIconWhatWeDo img {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.whatWeDoLegend {
+  width: 45%;
+  font-size: 24px;
+  font-family: "acaslom";
+  font-weight: 500;
+  color: #666666;
+  text-align: center;
+}
+
+.whatWeDoItemList {
+  display: flex;
+  justify-content: center;
+}
+
+.whatWeDoItem {
+  width: 70%;
+  max-width: 300px;
+  margin: 5%;
+}
+
+.whatWeDoItem h1 {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: raleway;
+  font-weight: 500;
+  color: #3b3d40;
+}
+
+.whatWeDoItem p {
+  font-size: 14px;
+  text-align: center;
+  color: #73787b;
+}
+
+.whatWeDoItem img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+/* apps */
+
+.appsContainer {
+  background-image: url(../images/apps/pieza-web.gif);
+  background-size: cover;
+  height: 700px;
+}
+
+.appsTextContainer {
+  color: white;
+  width: 35%;
+  margin-left: 8%;
+  padding-top: 5%;
+  text-align: left;
+}
+
+.appsTitle {
+  color: white;
+  font-size: 40px !important;
+  margin: 0;
+}
+
+.appsText {
+  font-family: "acaslom";
+}
+
+/* fidelizacion */
+
+.loyaltyContainer {
+  background-color: #f9f9f9;
+  display: flex;
+  padding: 3%;
+}
+
+.loyaltyContainer img {
+  width: 80%;
+  margin-left: 5%;
+}
+
+.loyaltyTextContainer {
+  position: absolute;
+  width: 30%;
+  left: 60%;
+}
+
+.loyaltyTitle {
+  color: #3b3d40;
+  font-family: "raleway extrabold";
+  font-size: 200% !important;
+}
+
+.loyaltyText {
+  color: #3b3d40;
+  font-family: "acaslom";
+}
+
+/* team */
+
+.teamContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7%;
+}
+
+.mainTitleTeam {
+  width: 50%;
+  text-align: center;
+}
+
+.teamLegend {
+  color: #fd644f;
+  width: 50%;
+  text-align: center;
+  font-family: acaslom;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.teamLegendAutors {
+  color: #fd644f;
+  font-size: 12px;
+  margin-bottom: 70px;
+}
+
+.carousel {
+  max-width: 70%;
+}
+
+.carouselItem {
+  display: flex;
+  justify-content: center;
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 280px;
+  box-shadow: 0 0 5px gray;
+}
+
+.teamMemberTextOne {
+  color: #656b6f;
+  font-size: 16px;
+  width: 70%;
+  font-weight: 500;
+  font-family: acaslom;
+}
+
+.teamMemberTextTwo {
+  color: #3c3d41;
+  font-size: 12px;
+  margin-bottom: 0;
+  font-family: "raleway extrabold";
+  font-weight: 600;
+}
+
+.teamMemberTextThree {
+  color: #656b6f;
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 10%;
+  font-family: acaslom;
+  font-weight: 500;
+}
+
+/* casos de exito */
+
+.successStoriesContainer {
+  background-color: #fd644f;
+  color: white;
+  padding-bottom: 7%;
+}
+
+.successStoriesTitle {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-family: "raleway light";
+  font-size: 13px;
+}
+
+.succesItem-text {
+  font-family: acaslom;
+  font-weight: 500;
+}
+
+.succesItem-name {
+  font-family: "raleway extrabold";
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.succesItem-job {
+  font-family: "acaslom";
+  font-weight: 500;
+  font-size: 14px;
+  color: #fed8d5;
+}
+
+/* clientes */
+
+.customersMainTitle {
+  margin-top: 5%;
+}
+
+.customersGrid {
+  padding: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.customersGrid img {
+  width: 18%;
+}
+
+/* footer image */
+
+.backgroundFooter {
+  background: url(../images/footer-background.png);
+  background-color: tomato;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+/* hablemos */
+
+.letsTalkContainer {
+  padding-bottom: 5%;
+}
+
+.letsTalkMainTitle {
+  color: white;
+  margin-top: 5%;
+}
+
+.letsTalkText {
+  color: white;
+  font-size: 24px;
+  margin-top: 0;
+  font-family: acaslom;
+  font-weight: 500;
+}
+
+.formInput {
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  height: 30px;
+  margin: 2%;
+  background-color: #fd7b69;
+  width: 300px;
+  color: white;
+  font-family: "raleway light";
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.formInput::placeholder {
+  color: white;
+  padding: 10px;
+  font-family: "raleway light";
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.formInput:focus {
+  color: white;
+  font-family: "raleway light";
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.formButton {
+  border: 0px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: white;
+  color: #fd644f;
+  margin: 2%;
+  width: 150px;
+  font-family: "raleway light";
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.formButton:hover {
+  background-color: #fd7b69;
+  color: white;
+}
+
+/* footer */
+
+.footerContainer {
+  background-color: #000000;
+  opacity: 0.9;
+}
+
+.firstLineFooter {
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.firstLineFooter > h1 {
+  font-family: "raleway bold";
+  font-weight: 600;
+  font-size: 16pt;
+}
+
+.footerInfoTextPosition {
+  display: flex;
+  justify-content: center;
+}
+
+.footerInfoText {
+  margin: 20px;
+  color: #747474;
+  font-family: acaslom;
+  font-weight: 500;
+  font-size: 15pt;
+}
+
+.footerInfoText p {
+  margin: 0px;
+}
+
+.footerBrand {
+  display: flex;
+  justify-content: flex-end;
+  color: #747474;
+  padding-right: 10%;
+  font-family: acaslom;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.d-none {
+  display: none;
+}
+
+.error-message {
+  color: white;
+}
+
+/* responsive */
+
+.topnav a.icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mainTitle {
+    margin: 10px;
+    color: #3b3d40;
+    font-family: "raleway extrabold";
+    font-size: 35px !important;
+  }
+
+  /* hero */
+
+  .navSocial {
+    visibility: hidden;
+  }
+
+  .navItemns {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    right: 2;
+    z-index: 10;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    padding: 5%;
+    color: white;
+  }
+
+  /* end mobile nav */
+
+  .albertImg {
+    margin-top: 70%;
+    width: 50%;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .subtitle {
+    margin: 0;
+    margin-bottom: 10%;
+    font-size: 20px;
+    color: #fed8d5;
+    font-weight: lighter;
+  }
+
+  .downArrow img {
+    width: 40%;
+  }
+
+  /* startup */
+
+  .orangeCircle {
+    margin-top: 5%;
+    width: 50%;
+    max-width: 90px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: tomato;
+    border-radius: 50%;
+  }
+
+  .startupLegend {
+    margin-bottom: 5%;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    font-family: "acaslom";
+    font-weight: 500;
+    color: #666666;
+  }
+
+  .startupText {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-family: "acaslom";
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  /* lo que hacemos */
+
+  .whatWeDoLegend {
+    width: 80%;
+    font-size: 20px;
+    font-family: "acaslom";
+    font-weight: 500;
+    color: #666666;
+    text-align: center;
+  }
+
+  .whatWeDoItemList {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .whatWeDoItem {
+    width: 50%;
+    max-width: 130px;
+  }
+
+  /* apps */
+
+  .appsContainer {
+    background-image: url(../images/apps/mobile-web-aninamdo-app.gif);
+    background-size: cover;
+    height: 700px;
+  }
+
+  .appsTextContainer {
+    color: white;
+    width: 80%;
+    margin-left: 8%;
+    padding-top: 5%;
+    text-align: left;
+  }
+
+  .appsTitle {
+    color: white;
+    font-size: 30px !important;
+    margin: 0;
+  }
+
+  .appsText {
+    font-family: "acaslom";
+    font-size: 15px;
+  }
+
+  /* fidelizacion */
+
+  .loyaltyContainer {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3%;
+  }
+
+  .loyaltyContainer img {
+    width: 100%;
+  }
+
+  .loyaltyTextContainer {
+    position: relative;
+    width: 80%;
+    left: 10%;
+  }
+
+  /* team */
+
+  .mainTitleTeam {
+    width: 80%;
+    text-align: center;
+  }
+
+  .teamLegend {
+    color: #fd644f;
+    width: 80%;
+    text-align: center;
+    font-family: acaslom;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .carousel {
+    max-width: 90%;
+  }
+
+  /* casos de exito */
+
+  .succesItem {
+    max-width: 80%;
+  }
+
+  /* clientes */
+
+  .customersMainTitle {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .customersGrid {
+    display: flex;
+    flex-flow: wrap;
+    padding: 20px !important;
+    margin-bottom: 10%;
+  }
+
+  .customersGrid img {
+    width: 50%;
+  }
+
+  /* hablemos */
+
+  .letsTalkMainTitle {
+    color: white;
+    margin-top: 5%;
+  }
+
+  .letsTalkText {
+    color: #fed8d5;
+    font-size: 24px;
+    margin-top: 0;
+    font-family: acaslom;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  /* footer */
+
+  .footerInfoTextPosition {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerInfoText {
+    margin: 20px;
+    color: #747474;
+    font-family: acaslom;
+    font-weight: 500;
+    font-size: 12pt;
+  }
+
+  .footerInfoText p {
+    margin: 0px;
+    text-align: center;
+  }
+
+  .footerBrand {
+    display: flex;
+    justify-content: center;
+    color: #747474;
+    font-family: acaslom;
+    font-weight: 500;
+    font-size: 7px;
+  }
+}
