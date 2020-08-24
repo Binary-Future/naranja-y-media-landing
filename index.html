@@ -14,6 +14,7 @@
     />
     <title>Naranja y Media</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/mobileMenu.css" />
     <!-- owlcarousel -->
     <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css" />
     <link
@@ -23,24 +24,49 @@
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-173797720-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-173797720-1");
+    </script>
   </head>
+
   <body>
+    <div class="wspButton wspOrangeCircle">
+      <a href="https://wa.me/3043358981" target="_blank"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+    </div>
+
     <!-- header -->
 
     <header>
-      <nav>
-        <ul class="navItemns">
+      <nav class="topnav">
+        <ul class="navItemns" id="myLinks">
           <li><a href="#startup">STARTUP</a></li>
           <li><a href="#whatWeDo">LO QUE HACEMOS</a></li>
-          <li><a href="#team">TEAM NARANJA</a></li>
-          <li><a href="#customers">CLIENTES</a></li>
+          <li><a href="#solutions">SOLUCIONES</a></li>
+          <li><a href="#team">TEAM</a></li>
           <li><a href="#letsTalk">HABLEMOS</a></li>
         </ul>
         <ul class="navSocial">
           <a href=""><i class="fab fa-linkedin-in"></i></a>
           <a href=""><i class="fab fa-instagram"></i></a>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
+
       <div class="heroContainer" data-aos="fade-in">
         <img src="images/ALBERT.png" class="albertImg" alt="albert-image" />
         <div class="titleHeader">
@@ -128,14 +154,14 @@
 
     <!-- apps -->
 
-    <section class="appsContainer">
+    <section id="solutions" class="appsContainer">
       <div class="appsTextContainer">
         <h1 class="mainTitle appsTitle">
           Nuestras Soluciones Digitales - Apps
         </h1>
         <p class="appsText">
           Desarrollamos aplicaciones first mobile con nuestro partner
-          Estrategico Binary Future para los sistemas Android y iOs con usos a
+          estratégico Binary Future para los sistemas Android y iOs con usos a
           medida y comerciales, además te ayudamos a monetizarla y generar
           cualquier los diferentes tipos de integración.
         </p>
@@ -348,17 +374,37 @@
           Déjanos tus datos y nos comunicaremos contigo a la brevedad
         </p>
         <form class="columnCentered">
-          <input id="nombre" class="formInput" type="text" required placeholder="Tu nombre" />
-          <input id="email" class="formInput" type="email" required placeholder="Aquí tu email" />
-          <input id="movil" class="formInput" type="tel"  required placeholder="Móvil" />
           <input
-            id="mensaje"
+            id="nombre"
             class="formInput"
             type="text"
             required
+            placeholder="Tu nombre"
+          />
+          <input
+            id="email"
+            class="formInput"
+            type="email"
+            required
+            placeholder="Aquí tu email"
+          />
+          <input
+            id="movil"
+            class="formInput"
+            type="tel"
+            required
+            placeholder="Móvil"
+          />
+          <input
+            id="mensaje"
+            class="formInput"
+            type="textarea"
+            required
             placeholder="Déjanos tu mensaje"
           />
-          <small id="errorMessage" class="error-message d-none">Todos los campos son obligatorios</small>
+          <small id="errorMessage" class="error-message d-none"
+            >Todos los campos son obligatorios</small
+          >
           <button id="formButton" class="formButton">
             <div id="send-status" class="d-none">
               <i class="fas fa-circle-notch fa-spin"></i> Enviando...
@@ -368,7 +414,6 @@
               Enviar
             </div>
           </button>
-
         </form>
       </section>
 
@@ -385,7 +430,7 @@
         <div class="footerInfoTextPosition">
           <div class="footerInfoText">
             <p>Llerena 3150,</p>
-            <p>Llerena 3150, Parque Chas, CABA, Argentina</p>
+            <p>Parque Chas, CABA, Argentina</p>
             <p>naranjamasmedia@gmail.com</p>
           </div>
           <div class="footerInfoText">
@@ -406,5 +451,6 @@
     <script src="./scripts/scroll.js"></script>
     <script src="./scripts/aos.js"></script>
     <script src="./scripts/form.js"></script>
+    <script src="./scripts/mobileMenu.js"></script>
   </body>
 </html>

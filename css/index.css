@@ -37,6 +37,36 @@ body {
   margin: 0;
 }
 
+.wspButton {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  opacity: 0.5;
+  padding: 1%;
+  z-index: 10;
+}
+
+.wspOrangeCircle {
+  margin-top: 5%;
+  width: 70%;
+  max-width: 50px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: tomato;
+  border-radius: 50%;
+}
+
+.wspButton a i {
+  color: white;
+  font-size: 32px;
+  margin: 5px;
+}
+
 /* generic */
 
 .orangeCircle {
@@ -555,6 +585,10 @@ nav {
 
 /* responsive */
 
+.topnav a.icon {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .mainTitle {
     margin: 10px;
@@ -565,9 +599,33 @@ nav {
 
   /* hero */
 
-  nav {
+  .navSocial {
+    visibility: hidden;
+  }
+
+  .navItemns {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    right: 2;
+    z-index: 10;
+  }
+
+  .topnav #myLinks {
     display: none;
   }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    padding: 5%;
+    color: white;
+  }
+
+  /* end mobile nav */
 
   .albertImg {
     margin-top: 70%;
@@ -653,7 +711,7 @@ nav {
 
   .appsTextContainer {
     color: white;
-    width: 90%;
+    width: 80%;
     margin-left: 8%;
     padding-top: 5%;
     text-align: left;
