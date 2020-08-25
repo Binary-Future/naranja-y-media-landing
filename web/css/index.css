@@ -441,14 +441,20 @@ nav {
 }
 
 .customersGrid {
-  padding: 15%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5% 15%;
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 10%;
 }
 
-.customersGrid img {
-  width: 18%;
+.img-container {
+  max-width: 18%;
   height: auto;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
 }
 
 /* footer image */
@@ -795,9 +801,8 @@ nav {
     height: auto;
   }
 
-  .customersGrid img {
-    width: 50%;
-    max-width: 50%;
+  .img-container > img {
+    width: 100%;
     height: 100%;
   }
 
