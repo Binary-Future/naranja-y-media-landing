@@ -789,6 +789,12 @@ nav {
     margin-bottom: 10%;
   }
 
+  .img-container {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+
   .customersGrid img {
     width: 50%;
     max-width: 50%;
