@@ -61,8 +61,8 @@
           <li><a href="#letsTalk">HABLEMOS</a></li>
         </ul>
         <ul class="navSocial">
-          <a href=""><i class="fab fa-linkedin-in"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/naranjaymedia"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"><i class="fab fa-instagram"></i></a>
         </ul>
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
           <i class="fa fa-bars"></i>
@@ -268,7 +268,7 @@
     <!-- casos de exito -->
 
     <section id="successStories" class="successStoriesContainer columnCentered">
-      <h1 class="successStoriesTitle">CASOS DE EXITO</h1>
+      <h1 class="successStoriesTitle">CASOS DE ÉXITO</h1>
       <div
         id="owl-two"
         class="owl-carousel owl-theme owl-loaded carousel"
@@ -279,7 +279,7 @@
             <div class="owl-item carouselItem">
               <div class="succesItem">
                 <h1 class="succesItem-text">
-                  Logre transformar y desarrollar canales de venta digitales
+                  Logré transformar y desarrollar canales de venta digitales
                   efectivos para mi tienda de ropa, además del acompañamiento
                   para lanzar las campañas de nuevos productos.
                 </h1>
@@ -425,8 +425,8 @@
         <div class="firstLineFooter">
           <h1>Naranja & Media</h1>
           <ul class="navSocial">
-            <a href=""><i class="fab fa-linkedin-in"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/naranjaymedia"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"><i class="fab fa-instagram"></i></a>
           </ul>
         </div>
         <div class="footerInfoTextPosition">
