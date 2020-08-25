@@ -791,6 +791,9 @@ nav {
 
   .customersGrid img {
     width: 50%;
+    display: block;
+    height: auto;
+    max-width: 100%
   }
 
   /* hablemos */
