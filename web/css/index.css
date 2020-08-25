@@ -789,11 +789,11 @@ nav {
     margin-bottom: 10%;
   }
 
-  .customersGrid img {
-    width: 50%;
+  .customersGrid > img {
     display: block;
+    max-width: 50%;
+    width: 50%;
     height: auto;
-    max-width: 100%
   }
 
   /* hablemos */
