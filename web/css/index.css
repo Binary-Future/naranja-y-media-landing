@@ -327,7 +327,6 @@ nav {
 
 .loyaltyContainer img {
   width: 80%;
-  margin-left: 5%;
 }
 
 .loyaltyTextContainer {
@@ -516,22 +515,23 @@ nav {
   color: white;
   font-family: "raleway light";
   font-weight: 600;
-  font-size: 17px;
+  font-size: 12pt;
+  padding: 10px;
 }
 
 .formInput::placeholder {
   color: white;
-  padding: 10px;
   font-family: "raleway light";
   font-weight: 600;
-  font-size: 17px;
+  font-size: 12pt;
+  vertical-align: middle;
 }
 
 .formInput:focus {
   color: white;
   font-family: "raleway light";
   font-weight: 600;
-  font-size: 17px;
+  font-size: 12pt;
 }
 
 .formButton {
