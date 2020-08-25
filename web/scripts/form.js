@@ -34,7 +34,7 @@ $('#formButton').click((e) => {
 
 	console.log(data);
 
-	$.post('http://localhost/naranja-y-media-landing/mailer/', JSON.stringify(data))
+	$.post('https://naranja-y-media.herokuapp.com/mailer/', JSON.stringify(data))
 	.done(( data ) => {
     	const response = JSON.parse(data);
     	if (data.status) {
