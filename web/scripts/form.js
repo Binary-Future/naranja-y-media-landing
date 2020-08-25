@@ -34,8 +34,8 @@ $('#formButton').click((e) => {
 
 	console.log(data);
 
-	$.post('https://naranja-y-media.herokuapp.com/mailer/', JSON.stringify(data))
-	.done(( data ) => {
+	$.post('/mailer/main.php', JSON.stringify(data))
+	.done(data => {
     	const response = JSON.parse(data);
     	if (data.status) {
     		alert('Correo enviado exitosamente')
@@ -46,7 +46,8 @@ $('#formButton').click((e) => {
     	sendStatus$.classList.add('d-none');
 		send$.classList.remove('d-none');
     })
-    .fail(() => {
+    .fail(e => {
+		console.error('eror sending email: '. e)
     	alert('El correo no se ha podido enviar, intente mas tarde');
 	    sendStatus$.classList.add('d-none');
 		send$.classList.remove('d-none');
