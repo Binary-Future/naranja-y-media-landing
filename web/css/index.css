@@ -789,7 +789,8 @@ nav {
     margin-bottom: 10%;
   }
 
-  .customersGrid > img {
+  .customersGrid img {
+    width: 50%;
     max-width: 50%;
     height: auto;
   }
