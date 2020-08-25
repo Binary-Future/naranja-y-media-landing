@@ -7,7 +7,7 @@
 @font-face {
   font-family: "cocogose";
   src: url("../fonts/cocogoose/Cocogoose Pro Light-trial.ttf")
-  format("truetype");
+    format("truetype");
 }
 
 @font-face {
@@ -28,13 +28,14 @@
 @font-face {
   font-family: "acaslom";
   src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Regular")
-  format("truetype");
+    format("truetype");
 }
 
 html,
 body {
   scroll-behavior: smooth;
   margin: 0;
+  height: 100%;
 }
 
 .wspButton {
@@ -54,6 +55,7 @@ body {
 .wspOrangeCircle {
   margin-top: 5%;
   width: 70%;
+  height: auto;
   max-width: 50px;
   border-style: solid;
   border-width: 3px;
@@ -72,6 +74,7 @@ body {
 .orangeCircle {
   margin-top: 5%;
   width: 70%;
+  height: auto;
   max-width: 120px;
   border-style: solid;
   border-width: 3px;
@@ -190,6 +193,12 @@ nav {
   background-color: #f9f9f9;
 }
 
+.startUpIcon {
+  padding-right: 7px;
+  padding-left: 4px;
+  padding-top: 10px;
+}
+
 .startupLegend {
   margin-bottom: 5%;
   width: 60%;
@@ -221,6 +230,13 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5%;
+}
+
+.borderIconWhatWeDo {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .borderIconWhatWeDo img {
@@ -237,6 +253,8 @@ nav {
   font-weight: 500;
   color: #666666;
   text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .whatWeDoItemList {
@@ -247,7 +265,8 @@ nav {
 .whatWeDoItem {
   width: 70%;
   max-width: 300px;
-  margin: 5%;
+  margin-top: 2%;
+  margin-right: 5%;
 }
 
 .whatWeDoItem h1 {
@@ -269,13 +288,13 @@ nav {
 .whatWeDoItem img {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 30%;
 }
 
 /* apps */
 
 .appsContainer {
-  background-image: url(../images/apps/pieza-web.gif);
+  background-image: url(../images/piezas-final/pieza-de-apps.gif);
   background-size: cover;
   height: 700px;
 }
@@ -444,12 +463,13 @@ nav {
   padding: 5% 15%;
   display: flex;
   flex-flow: wrap;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .img-container {
-  width: 18%;
+  width: 21%;
   height: auto;
+  margin: 2%;
 }
 
 .img-container img {
@@ -541,12 +561,13 @@ nav {
 }
 
 .firstLineFooter {
-  color: gray;
+  color: white;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 10%;
   padding-left: 10%;
+  align-items: center;
 }
 
 .firstLineFooter > h1 {
@@ -606,16 +627,18 @@ nav {
 
   /* hero */
 
-  .navSocial {
+  header {
+    height: auto;
+  }
+
+  .navSocialTop {
     visibility: hidden;
   }
 
   .navItemns {
     flex-direction: column;
-    position: absolute;
     width: 100%;
-    right: 2;
-    z-index: 10;
+    padding: 0;
   }
 
   .topnav #myLinks {
@@ -635,8 +658,8 @@ nav {
   /* end mobile nav */
 
   .albertImg {
-    margin-top: 70%;
-    width: 50%;
+    margin-top: 20%;
+    width: 65%;
   }
 
   .title {
@@ -653,7 +676,8 @@ nav {
   }
 
   .downArrow img {
-    width: 40%;
+    margin-top: 45%;
+    width: 35%;
   }
 
   /* startup */
@@ -685,7 +709,7 @@ nav {
     font-family: "acaslom";
     font-weight: 500;
     font-size: 18px;
-    text-align: justify;
+    text-align: center;
   }
 
   /* lo que hacemos */
@@ -709,10 +733,16 @@ nav {
     max-width: 130px;
   }
 
+  .whatWeDoItem img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+
   /* apps */
 
   .appsContainer {
-    background-image: url(../images/apps/mobile-web-aninamdo-app.gif);
+    background-image: url(../images/piezas-final/mobile-web-aninamdo-appss.gif);
     background-size: cover;
     height: 700px;
   }
@@ -799,6 +829,7 @@ nav {
     display: block;
     width: 50%;
     height: auto;
+    margin: 0;
   }
 
   .img-container img {
@@ -820,9 +851,20 @@ nav {
     font-family: acaslom;
     font-weight: 500;
     text-align: center;
+    padding: 6px;
   }
 
   /* footer */
+
+  .backgroundFooter {
+    background-image: none;
+  }
+
+  .footerContainer {
+    background-color: #000000;
+    opacity: 1;
+    color: white;
+  }
 
   .footerInfoTextPosition {
     display: flex;
@@ -831,7 +873,7 @@ nav {
 
   .footerInfoText {
     margin: 20px;
-    color: #747474;
+    color: white;
     font-family: acaslom;
     font-weight: 500;
     font-size: 12pt;
@@ -845,7 +887,7 @@ nav {
   .footerBrand {
     display: flex;
     justify-content: center;
-    color: #747474;
+    color: gray;
     font-family: acaslom;
     font-weight: 500;
     font-size: 7px;
