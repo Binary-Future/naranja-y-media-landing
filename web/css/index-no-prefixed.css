@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 @import "fontawesome/solid.min.css";
 @import "fontawesome/brands.min.css";
 @import "fontawesome/regular.min.css";
@@ -45,16 +38,10 @@ body {
 }
 
 .wspButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   position: fixed;
   right: 2%;
@@ -100,16 +87,9 @@ body {
 }
 
 .columnCentered {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* nav */
@@ -119,12 +99,8 @@ header {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   color: white;
 }
 
@@ -132,17 +108,12 @@ nav {
   font-family: "raleway light";
   font-weight: 600;
   font-size: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: start;
 }
 
 .navItemns li a:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .navItemns li {
@@ -156,12 +127,8 @@ nav {
 }
 
 .navSocial {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
 
 .navSocial a i {
@@ -173,16 +140,9 @@ nav {
 /* hero */
 
 .heroContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .albertImg {
@@ -191,16 +151,9 @@ nav {
 }
 
 .titleHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   color: white;
   font-family: cocogose;
 }
@@ -219,12 +172,8 @@ nav {
 }
 
 .downArrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 2%;
 }
 
@@ -235,16 +184,9 @@ nav {
 /* startup */
 
 .startupContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #f9f9f9;
 }
 
@@ -259,12 +201,8 @@ nav {
 }
 
 .startupText {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: start;
   width: 80%;
   font-family: "acaslom";
   font-weight: 500;
@@ -280,16 +218,9 @@ nav {
 /* Lo que hacemos */
 
 .whatWeDoContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .borderIconWhatWeDo img {
@@ -309,12 +240,8 @@ nav {
 }
 
 .whatWeDoItemList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .whatWeDoItem {
@@ -375,8 +302,6 @@ nav {
 
 .loyaltyContainer {
   background-color: #f9f9f9;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 3%;
 }
@@ -406,16 +331,9 @@ nav {
 /* team */
 
 .teamContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 7%;
 }
 
@@ -444,30 +362,18 @@ nav {
 }
 
 .carouselItem {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .teamMember {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   width: 200px;
   height: 280px;
-  -webkit-box-shadow: 0 0 5px gray;
-          box-shadow: 0 0 5px gray;
+  box-shadow: 0 0 5px gray;
 }
 
 .teamMemberTextOne {
@@ -586,38 +492,6 @@ nav {
   font-size: 17px;
 }
 
-.formInput::-webkit-input-placeholder {
-  color: white;
-  padding: 10px;
-  font-family: "raleway light";
-  font-weight: 600;
-  font-size: 17px;
-}
-
-.formInput::-moz-placeholder {
-  color: white;
-  padding: 10px;
-  font-family: "raleway light";
-  font-weight: 600;
-  font-size: 17px;
-}
-
-.formInput:-ms-input-placeholder {
-  color: white;
-  padding: 10px;
-  font-family: "raleway light";
-  font-weight: 600;
-  font-size: 17px;
-}
-
-.formInput::-ms-input-placeholder {
-  color: white;
-  padding: 10px;
-  font-family: "raleway light";
-  font-weight: 600;
-  font-size: 17px;
-}
-
 .formInput::placeholder {
   color: white;
   padding: 10px;
@@ -661,12 +535,8 @@ nav {
 
 .firstLineFooter {
   color: gray;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-top: 20px;
   padding-right: 10%;
   padding-left: 10%;
@@ -679,12 +549,8 @@ nav {
 }
 
 .footerInfoTextPosition {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .footerInfoText {
@@ -700,12 +566,8 @@ nav {
 }
 
 .footerBrand {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   color: #747474;
   padding-right: 10%;
   font-family: acaslom;
@@ -742,10 +604,7 @@ nav {
   }
 
   .navItemns {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     position: absolute;
     width: 100%;
     right: 2;
@@ -813,13 +672,8 @@ nav {
   }
 
   .startupText {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 80%;
     font-family: "acaslom";
     font-weight: 500;
@@ -839,11 +693,8 @@ nav {
   }
 
   .whatWeDoItemList {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
+    flex-flow: wrap;
   }
 
   .whatWeDoItem {
@@ -882,13 +733,8 @@ nav {
 
   .loyaltyContainer {
     background-color: #f9f9f9;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     padding: 3%;
   }
 
@@ -936,11 +782,8 @@ nav {
   }
 
   .customersGrid {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
+    flex-flow: wrap;
     padding: 20px !important;
     margin-bottom: 10%;
   }
@@ -968,13 +811,8 @@ nav {
   /* footer */
 
   .footerInfoTextPosition {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 
   .footerInfoText {
@@ -991,12 +829,8 @@ nav {
   }
 
   .footerBrand {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     color: #747474;
     font-family: acaslom;
     font-weight: 500;

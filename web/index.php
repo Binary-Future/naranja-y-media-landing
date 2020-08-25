@@ -29,8 +29,6 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-173797720-1"
     ></script>
-    <!--MODERNIZR-->
-    <script src="./scripts/modernizr-custom.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
