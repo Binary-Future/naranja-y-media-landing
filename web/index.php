@@ -87,10 +87,17 @@
       </div>
 
       <h1 class="mainTitle">StartUp Digital</h1>
-      <p class="startupLegend">
-        Somos el Partner ideal de aquellas organizaciones que buscan
-        transformarse y ser los Reyes del Marketing Digital.
-      </p>
+  
+      <div class="leyendContainer">
+        <blockquote>
+          <p class="startupLegend">
+            Somos el Partner ideal de aquellas organizaciones que buscan
+            transformarse y ser los Reyes del Marketing Digital.
+          </p>
+        </blockquote>
+      </div>
+     
+      
       <div class="startupText" data-aos="fade-in">
         <p>
           Creamos Estrategias usando los mejores aceleradores de Inbound

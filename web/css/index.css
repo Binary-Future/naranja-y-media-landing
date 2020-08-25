@@ -31,6 +31,12 @@
   format("truetype");
 }
 
+@font-face {
+  font-family: "acaslom-semibold";
+  src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro Semibold/Adobe Caslon Pro Semibold")
+  format("truetype");
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -190,14 +196,46 @@ nav {
   background-color: #f9f9f9;
 }
 
+blockquote:before {
+  font-family: "acaslom";
+  color: #ccc;
+  content: "\201C";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  font-family: "acaslom";
+  color: #ccc;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.1em;
+  content: "\201E";
+}
+
+blockquote p {
+  text-align: center;
+  display: inline;
+}
+
 .startupLegend {
+  quotes: "00AB";
   margin-bottom: 5%;
   width: 60%;
   font-size: 24px;
   text-align: center;
-  font-family: "acaslom";
-  font-weight: 500;
+  font-family: "acaslom-semibold";
   color: #666666;
+}
+
+.leyendContainer {
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  width: 50%;
 }
 
 .startupText {
@@ -668,6 +706,9 @@ nav {
     border-radius: 50%;
   }
 
+  .leyendContainer {
+    width: 100%;
+  }
   .startupLegend {
     margin-bottom: 5%;
     width: 80%;
