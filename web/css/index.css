@@ -792,7 +792,7 @@ nav {
   .customersGrid img {
     width: 50%;
     max-width: 50%;
-    height: auto;
+    height: 100%;
   }
 
   /* hablemos */
