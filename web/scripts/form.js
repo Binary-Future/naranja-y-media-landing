@@ -46,8 +46,7 @@ $('#formButton').click((e) => {
     	sendStatus$.classList.add('d-none');
 		send$.classList.remove('d-none');
     })
-    .fail(e => {
-		console.error('eror sending email: '. e)
+    .fail(() => {
     	alert('El correo no se ha podido enviar, intente mas tarde');
 	    sendStatus$.classList.add('d-none');
 		send$.classList.remove('d-none');
