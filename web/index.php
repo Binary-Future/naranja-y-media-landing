@@ -58,9 +58,9 @@
           <li><a href="#team">TEAM</a></li>
           <li><a href="#letsTalk">HABLEMOS</a></li>
         </ul>
-        <ul class="navSocial">
-          <a href="https://www.linkedin.com/company/naranjaymedia"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"><i class="fab fa-instagram"></i></a>
+        <ul class="navSocial navSocialTop">
+          <a target="_blank" href="https://www.linkedin.com/company/naranjaymedia"><i class="fab fa-linkedin-in"></i></a>
+          <a target="_blank" href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"><i class="fab fa-instagram"></i></a>
         </ul>
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
           <i class="fa fa-bars"></i>
@@ -82,7 +82,7 @@
     <!-- startup -->
 
     <section id="startup" class="startupContainer">
-      <div class="orangeCircle">
+      <div class="orangeCircle startUpIcon">
         <img src="./images/icons/crown.svg" alt="corona" />
       </div>
 
@@ -119,7 +119,7 @@
       <div class="orangeCircle borderIconWhatWeDo">
         <img src="./images/icons/app.svg" alt="corona" />
       </div>
-      <h1 class="mainTitle">Lo que hacemos</h1>
+      <h1 class="mainTitle whatWeDoTitle">Lo que hacemos</h1>
       <p class="whatWeDoLegend">
         Nutrimos tu marca de manera creativa en los siguientes frentes:
       </p>
@@ -320,7 +320,15 @@
         <div class="img-container">
           <img
             data-aos="fade-in"
-            src="./images/logos-clientes/accusys.png"
+            src="./images/logos-clientes/cherry.png"
+            alt=""
+          />
+        </div>
+
+        <div class="img-container">
+          <img
+            data-aos="fade-in"
+            src="./images/logos-clientes/prana.png"
             alt=""
           />
         </div>
@@ -336,14 +344,6 @@
         <div class="img-container">
           <img
             data-aos="fade-in"
-            src="./images/logos-clientes/cherry.png"
-            alt=""
-          />
-        </div>
-
-        <div class="img-container">
-          <img
-            data-aos="fade-in"
             src="./images/logos-clientes/colperu.png"
             alt=""
           />
@@ -352,7 +352,15 @@
         <div class="img-container">
           <img
             data-aos="fade-in"
-            src="./images/logos-clientes/embotellate.png"
+            src="./images/logos-clientes/uniempresarial.png"
+            alt=""
+          />
+        </div>
+
+        <div class="img-container">
+          <img
+            data-aos="fade-in"
+            src="./images/logos-clientes/rosen.png"
             alt=""
           />
         </div>
@@ -372,31 +380,6 @@
             alt=""
           />
         </div>
-
-        <div class="img-container">
-          <img
-            data-aos="fade-in"
-            src="./images/logos-clientes/rosen.png"
-            alt=""
-          />
-        </div>
-
-        <div class="img-container">
-          <img
-            data-aos="fade-in"
-            src="./images/logos-clientes/uniempresarial.png"
-            alt=""
-          />
-        </div>
-
-        <div class="img-container">
-          <img
-            data-aos="fade-in"
-            src="./images/logos-clientes/prana.png"
-            alt=""
-          />
-        </div>
-
       </div>
     </section>
 
@@ -460,8 +443,8 @@
         <div class="firstLineFooter">
           <h1>Naranja & Media</h1>
           <ul class="navSocial">
-            <a href="https://www.linkedin.com/company/naranjaymedia"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"><i class="fab fa-instagram"></i></a>
+            <a  target="_blank" href="https://www.linkedin.com/company/naranjaymedia"><i class="fab fa-linkedin-in"></i></a>
+            <a  target="_blank"href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"><i class="fab fa-instagram"></i></a>
           </ul>
         </div>
         <div class="footerInfoTextPosition">

@@ -7,7 +7,7 @@
 @font-face {
   font-family: "cocogose";
   src: url("../fonts/cocogoose/Cocogoose Pro Light-trial.ttf")
-  format("truetype");
+    format("truetype");
 }
 
 @font-face {
@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: "acaslom-semibold";
-  src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro Semibold/Adobe Caslon Pro Semibold")
+  src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Semibold")
   format("truetype");
 }
 
@@ -41,6 +41,7 @@ html,
 body {
   scroll-behavior: smooth;
   margin: 0;
+  height: 100%;
 }
 
 .wspButton {
@@ -60,6 +61,7 @@ body {
 .wspOrangeCircle {
   margin-top: 5%;
   width: 70%;
+  height: auto;
   max-width: 50px;
   border-style: solid;
   border-width: 3px;
@@ -78,6 +80,7 @@ body {
 .orangeCircle {
   margin-top: 5%;
   width: 70%;
+  height: auto;
   max-width: 120px;
   border-style: solid;
   border-width: 3px;
@@ -90,6 +93,7 @@ body {
   color: #3b3d40;
   font-family: "raleway extrabold";
   font-size: 52px !important;
+  line-height: 34pt;
 }
 
 .columnCentered {
@@ -198,20 +202,18 @@ nav {
 
 blockquote:before {
   font-family: "acaslom";
-  color: #ccc;
+  color: #666666;
   content: "\201C";
   font-size: 4em;
   line-height: 0.1em;
-  margin-right: 0.25em;
   vertical-align: -0.4em;
 }
 
 blockquote:after {
   font-family: "acaslom";
-  color: #ccc;
+  color: #666666;
   font-size: 4em;
   line-height: 0.1em;
-  margin-right: 0.25em;
   vertical-align: -0.1em;
   content: "\201E";
 }
@@ -221,11 +223,17 @@ blockquote p {
   display: inline;
 }
 
+.startUpIcon {
+  padding-right: 7px;
+  padding-left: 4px;
+  padding-top: 10px;
+}
+
 .startupLegend {
-  quotes: "00AB";
   margin-bottom: 5%;
   width: 60%;
   font-size: 24px;
+  font-weight: 500;
   text-align: center;
   font-family: "acaslom-semibold";
   color: #666666;
@@ -234,8 +242,8 @@ blockquote p {
 .leyendContainer {
   text-align: center;
   display: flex;
-  justify-content: start;
-  width: 50%;
+  justify-content: center;
+  width: 70%;
 }
 
 .startupText {
@@ -259,6 +267,13 @@ blockquote p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5%;
+}
+
+.borderIconWhatWeDo {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .borderIconWhatWeDo img {
@@ -271,10 +286,11 @@ blockquote p {
 .whatWeDoLegend {
   width: 45%;
   font-size: 24px;
-  font-family: "acaslom";
+  font-family: "acaslom-semibold";
   font-weight: 500;
   color: #666666;
   text-align: center;
+  margin: 0 0 30px;
 }
 
 .whatWeDoItemList {
@@ -285,21 +301,25 @@ blockquote p {
 .whatWeDoItem {
   width: 70%;
   max-width: 300px;
-  margin: 5%;
+  margin-top: 2%;
+  margin-right: 5%;
 }
 
 .whatWeDoItem h1 {
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: raleway;
-  font-weight: 500;
+  font-family: "raleway bold";
+  font-weight: 400;
   color: #3b3d40;
+  letter-spacing: 1px;
 }
 
 .whatWeDoItem p {
   font-size: 14px;
+  font-family: "acaslom";
+  font-weight: 500;
   text-align: center;
   color: #73787b;
 }
@@ -307,13 +327,13 @@ blockquote p {
 .whatWeDoItem img {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 30%;
 }
 
 /* apps */
 
 .appsContainer {
-  background-image: url(../images/apps/pieza-web.gif);
+  background-image: url(../images/piezas-final/pieza-de-apps.gif);
   background-size: cover;
   height: 700px;
 }
@@ -330,10 +350,13 @@ blockquote p {
   color: white;
   font-size: 40px !important;
   margin: 0;
+  line-height: 28pt;
+  letter-spacing: 1px;
 }
 
 .appsText {
   font-family: "acaslom";
+  margin-top: 30px;
 }
 
 /* fidelizacion */
@@ -358,6 +381,7 @@ blockquote p {
   color: #3b3d40;
   font-family: "raleway extrabold";
   font-size: 200% !important;
+  line-height: 28px;
 }
 
 .loyaltyText {
@@ -481,12 +505,13 @@ blockquote p {
   padding: 5% 15%;
   display: flex;
   flex-flow: wrap;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .img-container {
-  width: 18%;
+  width: 21%;
   height: auto;
+  margin: 2%;
 }
 
 .img-container img {
@@ -579,12 +604,13 @@ blockquote p {
 }
 
 .firstLineFooter {
-  color: gray;
+  color: white;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 10%;
   padding-left: 10%;
+  align-items: center;
 }
 
 .firstLineFooter > h1 {
@@ -640,20 +666,23 @@ blockquote p {
     color: #3b3d40;
     font-family: "raleway extrabold";
     font-size: 35px !important;
+    line-height: 28pt;
   }
 
   /* hero */
 
-  .navSocial {
+  header {
+    height: auto;
+  }
+
+  .navSocialTop {
     visibility: hidden;
   }
 
   .navItemns {
     flex-direction: column;
-    position: absolute;
     width: 100%;
-    right: 2;
-    z-index: 10;
+    padding: 0;
   }
 
   .topnav #myLinks {
@@ -673,8 +702,8 @@ blockquote p {
   /* end mobile nav */
 
   .albertImg {
-    margin-top: 70%;
-    width: 50%;
+    margin-top: 20%;
+    width: 65%;
   }
 
   .title {
@@ -691,7 +720,8 @@ blockquote p {
   }
 
   .downArrow img {
-    width: 40%;
+    margin-top: 45%;
+    width: 35%;
   }
 
   /* startup */
@@ -726,7 +756,7 @@ blockquote p {
     font-family: "acaslom";
     font-weight: 500;
     font-size: 18px;
-    text-align: justify;
+    text-align: center;
   }
 
   /* lo que hacemos */
@@ -750,10 +780,16 @@ blockquote p {
     max-width: 130px;
   }
 
+  .whatWeDoItem img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+
   /* apps */
 
   .appsContainer {
-    background-image: url(../images/apps/mobile-web-aninamdo-app.gif);
+    background-image: url(../images/piezas-final/mobile-web-aninamdo-appss.gif);
     background-size: cover;
     height: 700px;
   }
@@ -770,14 +806,21 @@ blockquote p {
     color: white;
     font-size: 30px !important;
     margin: 0;
+    line-height: 28px;
+    letter-spacing: 1px;
   }
 
   .appsText {
+    margin-top: 30px;
     font-family: "acaslom";
     font-size: 15px;
   }
 
   /* fidelizacion */
+
+  .loyaltyTitle {
+    line-height: 34px;
+  }
 
   .loyaltyContainer {
     background-color: #f9f9f9;
@@ -840,6 +883,7 @@ blockquote p {
     display: block;
     width: 50%;
     height: auto;
+    margin: 0;
   }
 
   .img-container img {
@@ -861,9 +905,20 @@ blockquote p {
     font-family: acaslom;
     font-weight: 500;
     text-align: center;
+    padding: 6px;
   }
 
   /* footer */
+
+  .backgroundFooter {
+    background-image: none;
+  }
+
+  .footerContainer {
+    background-color: #000000;
+    opacity: 1;
+    color: white;
+  }
 
   .footerInfoTextPosition {
     display: flex;
@@ -872,7 +927,7 @@ blockquote p {
 
   .footerInfoText {
     margin: 20px;
-    color: #747474;
+    color: white;
     font-family: acaslom;
     font-weight: 500;
     font-size: 12pt;
@@ -886,7 +941,7 @@ blockquote p {
   .footerBrand {
     display: flex;
     justify-content: center;
-    color: #747474;
+    color: gray;
     font-family: acaslom;
     font-weight: 500;
     font-size: 7px;
