@@ -35,9 +35,15 @@ $(document).ready(function () {
     margin: 50,
     loop: true,
     dots: false,
+<<<<<<< HEAD
     autoplay:true,
     autoplayTimeout: 3000,
     autoplayHoverPause:true,
+=======
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+>>>>>>> 6e71005f5e1ab2864771ccc1d85f1bdd1449c73d
     responsive: {
       0: {
         items: 1,
@@ -51,6 +57,7 @@ $(document).ready(function () {
     },
   });
 });
+<<<<<<< HEAD
 
 // $(".owl-next").click(function () {
 //   $("#owl-one").owlCarousel.trigger("next.owl.carousel");
@@ -60,3 +67,5 @@ $(document).ready(function () {
 // $(".owl-prev").click(function () {
 //   owl.trigger("prev.owl.carousel");
 // });
+=======
+>>>>>>> 6e71005f5e1ab2864771ccc1d85f1bdd1449c73d

@@ -42,7 +42,7 @@
 
   <body>
     <div class="wspButton wspOrangeCircle">
-      <a href="https://wa.me/3043358981" target="_blank"
+      <a href="https://wa.me/+573043358981" target="_blank"
         ><i class="fab fa-whatsapp"></i
       ></a>
     </div>
