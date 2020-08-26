@@ -395,7 +395,7 @@
         <p class="letsTalkText">
           Déjanos tus datos y nos comunicaremos contigo a la brevedad
         </p>
-        <form class="columnCentered">
+        <form class="columnCentered inputContainer">
           <input
             id="nombre"
             class="formInput"
@@ -417,13 +417,14 @@
             required
             placeholder="Móvil"
           />
-          <input
+          <textarea
             id="mensaje"
             class="formInput"
             type="textarea"
             required
             placeholder="Déjanos tu mensaje"
-          />
+            rows="60"
+          ></textarea>
           <small id="errorMessage" class="error-message d-none"
             >Todos los campos son obligatorios</small
           >
