@@ -80,6 +80,8 @@ body {
 }
 
 .wspButton {
+  width: 30rem;
+	height: 30rem;
   display: flex;
   color: white;
   justify-content: center;
@@ -894,6 +896,7 @@ blockquote p {
 
   .loyaltyContainer img {
     width: 100%;
+    content: url(../images/piezas-final/mobileloyalty.png);
   }
 
   .loyaltyTextContainer {
@@ -925,8 +928,9 @@ blockquote p {
   /* casos de exito */
 
   .succesItem {
-    max-width: 65%;
+    max-width: 70%;
   }
+
 
   /* clientes */
 
