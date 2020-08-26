@@ -46,20 +46,20 @@ body {
 
 .owl-prev {
   width: 15px;
-  height: 100px;
+  height: auto;
   position: absolute;
   top: 40%;
-  margin-left: -20px;
+  left: -5%;
   display: block !important;
   border: 0px solid black;
 }
 
 .owl-next {
   width: 15px;
-  height: 100px;
+  height: auto;
   position: absolute;
   top: 40%;
-  right: -25px;
+  right: -5%;
   display: block !important;
   border: 0px solid black;
 }
@@ -688,6 +688,26 @@ blockquote p {
 }
 
 @media (max-width: 600px) {
+  .owl-prev {
+    width: 15px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    display: block !important;
+    border: 0px solid black;
+  }
+
+  .owl-next {
+    width: 15px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    display: block !important;
+    border: 0px solid black;
+  }
+
   .mainTitle {
     margin: 10px;
     color: #3b3d40;
@@ -888,7 +908,7 @@ blockquote p {
   /* casos de exito */
 
   .succesItem {
-    max-width: 80%;
+    max-width: 65%;
   }
 
   /* clientes */
