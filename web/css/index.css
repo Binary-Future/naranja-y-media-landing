@@ -184,18 +184,18 @@ nav {
 .downArrowContainer {
   display: flex;
   justify-content: center;
-  width: 25%;
+  width: 10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .downArrow {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2%;
+  width: 100%;
 }
 
 .downArrow img {
-  width: 60%;
-  margin-bottom: 20%;
+  width: 100%;
+  height: auto;
 }
 
 /* startup */
@@ -726,10 +726,8 @@ blockquote p {
     font-weight: lighter;
   }
 
-  .downArrow img {
-    margin-top: 20%;
-    margin-bottom: 20%;
-    width: 50%;
+  .downArrowContainer {
+    width: 15%;
   }
 
   /* startup */
