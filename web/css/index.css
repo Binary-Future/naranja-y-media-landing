@@ -343,8 +343,8 @@ blockquote p {
   margin-bottom: 5%;
 }
 
-.startupCrown{
-  
+.startupCrown {
+  padding-bottom: 3%;
 }
 
 /* Lo que hacemos */
@@ -839,6 +839,15 @@ textarea {
 
   /* startup */
 
+  .startupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
   .orangeCircle {
     margin-top: 5%;
     width: 50%;
@@ -872,7 +881,19 @@ textarea {
     text-align: left;
   }
 
+  .startupCrown {
+    display: none;
+  }
+
   /* lo que hacemos */
+
+  .whatWeDoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
 
   .whatWeDoLegend {
     width: 80%;
@@ -905,6 +926,7 @@ textarea {
     background-image: url(../images/piezas-final/mobile-web-aninamdo-appss.gif);
     background-size: cover;
     height: 700px;
+    padding-top: 10%;
   }
 
   .appsTextContainer {
