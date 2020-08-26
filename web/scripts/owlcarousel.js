@@ -1,7 +1,10 @@
 $(document).ready(function () {
   $("#owl-one").owlCarousel({
     nav: true,
-    navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+    navText: [
+      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+    ],
     responsiveClass: true,
     margin: 0,
     loop: false,
@@ -38,11 +41,11 @@ $(document).ready(function () {
   });
 });
 
-$('.owl-next').click(function() {
-  $("#owl-one").owlCarousel.trigger('next.owl.carousel');
-})
+$(".owl-next").click(function () {
+  $("#owl-one").owlCarousel.trigger("next.owl.carousel");
+});
 
 // Go to the previous item
-$('.owl-prev').click(function() {
-    owl.trigger('prev.owl.carousel');
-})
+$(".owl-prev").click(function () {
+  owl.trigger("prev.owl.carousel");
+});
