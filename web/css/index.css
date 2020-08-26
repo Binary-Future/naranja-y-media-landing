@@ -81,7 +81,7 @@ body {
 
 .wspButton {
   width: 30rem;
-	height: 30rem;
+  height: 30rem;
   display: flex;
   color: white;
   justify-content: center;
@@ -97,7 +97,6 @@ body {
 
 .wspOrangeCircle {
   margin-top: 5%;
-  width: 70%;
   height: auto;
   max-width: 50px;
   border-style: solid;
@@ -305,6 +304,10 @@ blockquote p {
   margin: 2%;
   color: gray;
   margin-bottom: 5%;
+}
+
+.startupCrown{
+  
 }
 
 /* Lo que hacemos */
@@ -829,7 +832,7 @@ textarea {
     font-family: "acaslom";
     font-weight: 500;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
   }
 
   /* lo que hacemos */
@@ -949,10 +952,9 @@ textarea {
     max-width: 70%;
   }
 
-
   /* clientes */
 
-  .customersContainer{
+  .customersContainer {
     padding-top: 10%;
   }
 

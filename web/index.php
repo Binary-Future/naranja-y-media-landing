@@ -59,8 +59,16 @@
           <li><a href="#letsTalk">HABLEMOS</a></li>
         </ul>
         <ul class="navSocial navSocialTop">
-          <a target="_blank" href="https://www.linkedin.com/company/naranjaymedia"><i class="fab fa-linkedin-in"></i></a>
-          <a target="_blank" href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"><i class="fab fa-instagram"></i></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/naranjaymedia"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </ul>
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
           <i class="fa fa-bars"></i>
@@ -99,7 +107,6 @@
         </blockquote>
       </div>
 
-
       <div class="startupText" data-aos="fade-in">
         <p>
           Creamos Estrategias usando los mejores aceleradores de Inbound
@@ -108,11 +115,15 @@
         </p>
         <p>
           Nos especializamos en transformar digitalmente los segmentos de
-          empresas B2B y B2C acompañadolas en este proceso de
-          aceleración,potenciando los productos o servicios en diferentes
-          canales de venta.
+          empresas B2B y B2C acompañadolas en este proceso de aceleración,
+          potenciando los productos o servicios en diferentes canales de venta.
         </p>
       </div>
+      
+      <div class="startupCrown">
+        <img src="./images/piezas/corona marca de agua.png" alt="">
+      </div>
+      
     </section>
 
     <!-- lo que hacemos -->
@@ -446,8 +457,16 @@
         <div class="firstLineFooter">
           <h1>Naranja & Media</h1>
           <ul class="navSocial">
-            <a  target="_blank" href="https://www.linkedin.com/company/naranjaymedia"><i class="fab fa-linkedin-in"></i></a>
-            <a  target="_blank"href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"><i class="fab fa-instagram"></i></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/naranjaymedia"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </ul>
         </div>
         <div class="footerInfoTextPosition">
