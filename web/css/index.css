@@ -900,6 +900,8 @@ textarea {
     display: flex;
     flex-direction: column-reverse;
     padding: 3%;
+    padding-top: 5%;
+    padding-bottom: 20%;
   }
 
   .loyaltyContainer img {
@@ -914,6 +916,14 @@ textarea {
   }
 
   /* team */
+
+  .teamContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20%;
+    padding-top: 10%;
+  }
 
   .mainTitleTeam {
     width: 80%;
@@ -942,6 +952,10 @@ textarea {
 
   /* clientes */
 
+  .customersContainer{
+    padding-top: 10%;
+  }
+
   .customersMainTitle {
     margin-top: 5%;
     text-align: center;
@@ -967,6 +981,11 @@ textarea {
   }
 
   /* hablemos */
+
+  .letsTalkContainer {
+    padding-bottom: 8%;
+    padding-top: 10%;
+  }
 
   .letsTalkMainTitle {
     color: white;
