@@ -181,6 +181,45 @@ nav {
   font-size: 32px;
   margin: 5px;
 }
+/********/
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  color: white;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropItemContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dropItemContainer a {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/********/
 
 /* hero */
 

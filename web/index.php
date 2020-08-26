@@ -54,7 +54,23 @@
         <ul class="navItemns" id="myLinks">
           <li><a href="#startup">STARTUP</a></li>
           <li><a href="#whatWeDo">LO QUE HACEMOS</a></li>
-          <li><a href="#solutions">SOLUCIONES</a></li>
+          <li>
+            <div class="dropdown">
+              <a>
+                SOLUCIONES
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <div class="dropItemContainer">
+                  <a href="#">Fidelización</a>
+                  <a href="#">Casos de éxito</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
           <li><a href="#team">TEAM</a></li>
           <li><a href="#letsTalk">HABLEMOS</a></li>
         </ul>
