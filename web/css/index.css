@@ -591,6 +591,10 @@ blockquote p {
   font-weight: 500;
 }
 
+.inputContainer {
+  width: 35%;
+}
+
 .formInput {
   border: 0px;
   padding: 10px;
@@ -598,12 +602,16 @@ blockquote p {
   height: 30px;
   margin: 2%;
   background-color: #fd7b69;
-  width: 300px;
+  width: 100%;
   color: white;
   font-family: "raleway light";
   font-weight: 600;
   font-size: 12pt;
   padding: 10px;
+}
+
+textarea {
+  height: 60px !important;
 }
 
 .formInput::placeholder {
@@ -969,6 +977,10 @@ blockquote p {
     font-weight: 500;
     text-align: center;
     padding: 6px;
+  }
+
+  .inputContainer {
+    width: 75%;
   }
 
   /* footer */
