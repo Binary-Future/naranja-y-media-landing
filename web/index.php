@@ -62,8 +62,8 @@
               </a>
               <div class="dropdown-content">
                 <div class="dropItemContainer">
-                  <a href="#loyalty">Fidelización</a>
-                  <a href="#successStories">Casos de éxito</a>
+                  <a href="#loyalty">FIDELIZACIÓN</a>
+                  <a href="#successStories">CASOS DE ÉXITO</a>
                 </div>
               </div>
             </div>
