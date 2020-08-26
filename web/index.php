@@ -58,7 +58,7 @@
             <div class="dropdown">
               <a href="#solutions">
                 SOLUCIONES
-                <i class="fa fa-caret-down"></i>
+                <i class="fa fa-caret-down smallArrowIcon"></i>
               </a>
               <div class="dropdown-content">
                 <div class="dropItemContainer">
@@ -68,8 +68,6 @@
               </div>
             </div>
           </li>
-
-
 
           <li><a href="#team">TEAM</a></li>
           <li><a href="#letsTalk">HABLEMOS</a></li>
@@ -135,11 +133,10 @@
           potenciando los productos o servicios en diferentes canales de venta.
         </p>
       </div>
-      
+
       <div class="startupCrown">
-        <img src="./images/piezas/corona marca de agua.png" alt="">
+        <img src="./images/piezas/corona marca de agua.png" alt="" />
       </div>
-      
     </section>
 
     <!-- lo que hacemos -->

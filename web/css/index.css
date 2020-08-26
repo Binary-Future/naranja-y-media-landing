@@ -97,8 +97,8 @@ body {
 
 .wspOrangeCircle {
   margin-top: 5%;
-  height: auto;
-  max-width: 50px;
+  height: 50px;
+  width: 50px;
   border-style: solid;
   border-width: 3px;
   border-color: tomato;
@@ -773,6 +773,14 @@ textarea {
     right: 5%;
     display: block !important;
     border: 0px solid black;
+  }
+
+  .dropItemContainer {
+    display: none;
+  }
+
+  .smallArrowIcon {
+    display: none;
   }
 
   .mainTitle {
