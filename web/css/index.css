@@ -467,7 +467,7 @@ blockquote p {
   color: #3b3d40;
   font-family: "raleway extrabold";
   font-size: 200% !important;
-  line-height: 28px;
+  line-height: 35px;
 }
 
 .loyaltyText {
@@ -482,6 +482,7 @@ blockquote p {
   flex-direction: column;
   align-items: center;
   padding-bottom: 7%;
+  padding-top: 5%;
 }
 
 .mainTitleTeam {

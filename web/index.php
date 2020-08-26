@@ -196,7 +196,7 @@
           Desarrollamos aplicaciones first mobile con nuestro partner
           estratégico Binary Future para los sistemas Android y iOs con usos a
           medida y comerciales, además te ayudamos a monetizarla y generar
-          cualquier los diferentes tipos de integración.
+          cualquiera de los diferentes tipos de integración.
         </p>
       </div>
     </section>

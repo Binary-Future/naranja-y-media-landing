@@ -36,7 +36,7 @@ $(document).ready(function () {
       0: {
         loop: true,
         autoplay: true,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 6000,
         autoplayHoverPause: true,
         items: 1,
       },
