@@ -56,14 +56,14 @@
           <li><a href="#whatWeDo">LO QUE HACEMOS</a></li>
           <li>
             <div class="dropdown">
-              <a>
+              <a href="#solutions">
                 SOLUCIONES
                 <i class="fa fa-caret-down"></i>
               </a>
               <div class="dropdown-content">
                 <div class="dropItemContainer">
-                  <a href="#">Fidelización</a>
-                  <a href="#">Casos de éxito</a>
+                  <a href="#loyalty">Fidelización</a>
+                  <a href="#successStories">Casos de éxito</a>
                 </div>
               </div>
             </div>
@@ -195,7 +195,7 @@
 
     <!-- fidelizacion -->
 
-    <section class="loyaltyContainer">
+    <section id="loyalty" class="loyaltyContainer">
       <img src="./images/piezas/pieza-loyalty.png" alt="" />
       <div class="loyaltyTextContainer">
         <h1 class="loyaltyTitle">
