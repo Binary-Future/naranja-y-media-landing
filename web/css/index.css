@@ -80,6 +80,8 @@ body {
 }
 
 .wspButton {
+  width: 30rem;
+	height: 30rem;
   display: flex;
   color: white;
   justify-content: center;
@@ -937,10 +939,13 @@ textarea {
     display: flex;
     flex-direction: column-reverse;
     padding: 3%;
+    padding-top: 5%;
+    padding-bottom: 20%;
   }
 
   .loyaltyContainer img {
     width: 100%;
+    content: url(../images/piezas-final/mobileloyalty.png);
   }
 
   .loyaltyTextContainer {
@@ -950,6 +955,14 @@ textarea {
   }
 
   /* team */
+
+  .teamContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20%;
+    padding-top: 10%;
+  }
 
   .mainTitleTeam {
     width: 80%;
@@ -972,10 +985,15 @@ textarea {
   /* casos de exito */
 
   .succesItem {
-    max-width: 65%;
+    max-width: 70%;
   }
 
+
   /* clientes */
+
+  .customersContainer{
+    padding-top: 10%;
+  }
 
   .customersMainTitle {
     margin-top: 5%;
@@ -1002,6 +1020,11 @@ textarea {
   }
 
   /* hablemos */
+
+  .letsTalkContainer {
+    padding-bottom: 8%;
+    padding-top: 10%;
+  }
 
   .letsTalkMainTitle {
     color: white;
