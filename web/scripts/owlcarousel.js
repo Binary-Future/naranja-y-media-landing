@@ -30,13 +30,14 @@ $(document).ready(function () {
     ],
     responsiveClass: true,
     margin: 50,
-    loop: true,
     dots: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
+    loop: false,
     responsive: {
       0: {
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
         items: 1,
       },
       600: {

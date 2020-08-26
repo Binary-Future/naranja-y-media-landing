@@ -737,6 +737,7 @@ blockquote p {
 
   header {
     height: auto;
+    min-height: 100%;
   }
 
   .navSocialTop {
@@ -766,7 +767,6 @@ blockquote p {
   /* end mobile nav */
 
   .albertImg {
-    margin-top: 20%;
     width: 65%;
   }
 
