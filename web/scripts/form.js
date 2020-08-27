@@ -34,7 +34,7 @@ $('#formButton').click((e) => {
 
 	console.log(data);
 
-	$.post('/mailer/main.php', JSON.stringify(data))
+	$.post('/main.php', JSON.stringify(data))
 	.done(data => {
     	const response = JSON.parse(data);
     	if (data.status) {
