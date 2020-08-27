@@ -34,10 +34,9 @@ $('#formButton').click((e) => {
 
 	console.log(data);
 
-	$.post('/main.php', JSON.stringify(data))
+	$.post('https://naranja-y-media-node.herokuapp.com/form',data)
 	.done(data => {
-    	const response = JSON.parse(data);
-    	if (data.status) {
+    	if (data.success) {
     		alert('Correo enviado exitosamente')
     	} else {
     		alert('El correo no se ha podido enviar, intente mas tarde');
