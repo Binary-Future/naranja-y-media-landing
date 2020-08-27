@@ -7,7 +7,7 @@
 @font-face {
   font-family: "cocogose";
   src: url("../fonts/cocogoose/Cocogoose Pro Light-trial.ttf")
-  format("truetype");
+    format("truetype");
 }
 
 @font-face {
@@ -28,16 +28,60 @@
 @font-face {
   font-family: "acaslom";
   src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Regular")
-  format("truetype");
+    format("truetype");
+}
+
+@font-face {
+  font-family: "acaslom-semibold";
+  src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Semibold")
+    format("truetype");
+}
+
+@keyframes float {
+  0% {
+    /*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+    transform: translatey(0px);
+  }
+  50% {
+    /*box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);*/
+    transform: translatey(-20px);
+  }
+  100% {
+    /*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+    transform: translatey(0px);
+  }
 }
 
 html,
 body {
   scroll-behavior: smooth;
   margin: 0;
+  height: 100%;
+}
+
+.owl-prev {
+  width: 15px;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: -5%;
+  display: block !important;
+  border: 0px solid black;
+}
+
+.owl-next {
+  width: 15px;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  right: -5%;
+  display: block !important;
+  border: 0px solid black;
 }
 
 .wspButton {
+  width: 30rem;
+  height: 30rem;
   display: flex;
   color: white;
   justify-content: center;
@@ -53,8 +97,8 @@ body {
 
 .wspOrangeCircle {
   margin-top: 5%;
-  width: 70%;
-  max-width: 50px;
+  height: 50px;
+  width: 50px;
   border-style: solid;
   border-width: 3px;
   border-color: tomato;
@@ -72,6 +116,7 @@ body {
 .orangeCircle {
   margin-top: 5%;
   width: 70%;
+  height: auto;
   max-width: 120px;
   border-style: solid;
   border-width: 3px;
@@ -84,6 +129,7 @@ body {
   color: #3b3d40;
   font-family: "raleway extrabold";
   font-size: 52px !important;
+  line-height: 40pt;
 }
 
 .columnCentered {
@@ -136,6 +182,43 @@ nav {
   font-size: 32px;
   margin: 5px;
 }
+/********/
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  color: white;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropItemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.dropItemContainer a {
+  padding-top: 15px;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/********/
 
 /* hero */
 
@@ -171,14 +254,23 @@ nav {
   font-weight: lighter;
 }
 
-.downArrow {
+.downArrowContainer {
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
+  width: 6%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.downArrow {
+  width: 100%;
+  transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
 }
 
 .downArrow img {
-  width: 60%;
+  width: 100%;
+  height: auto;
 }
 
 /* startup */
@@ -190,14 +282,50 @@ nav {
   background-color: #f9f9f9;
 }
 
+blockquote:before {
+  font-family: "acaslom";
+  color: #666666;
+  content: "\201C";
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  font-family: "acaslom";
+  color: #666666;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.1em;
+  content: "\201E";
+}
+
+blockquote p {
+  text-align: center;
+  display: inline;
+}
+
+.startUpIcon {
+  padding-right: 7px;
+  padding-left: 4px;
+  padding-top: 10px;
+}
+
 .startupLegend {
   margin-bottom: 5%;
   width: 60%;
   font-size: 24px;
-  text-align: center;
-  font-family: "acaslom";
   font-weight: 500;
+  text-align: center;
+  font-family: "acaslom-semibold";
   color: #666666;
+}
+
+.leyendContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 70%;
 }
 
 .startupText {
@@ -215,12 +343,23 @@ nav {
   margin-bottom: 5%;
 }
 
+.startupCrown {
+  padding-bottom: 3%;
+}
+
 /* Lo que hacemos */
 
 .whatWeDoContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5%;
+}
+
+.borderIconWhatWeDo {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .borderIconWhatWeDo img {
@@ -233,10 +372,11 @@ nav {
 .whatWeDoLegend {
   width: 45%;
   font-size: 24px;
-  font-family: "acaslom";
+  font-family: "acaslom-semibold";
   font-weight: 500;
   color: #666666;
   text-align: center;
+  margin: 0 0 30px;
 }
 
 .whatWeDoItemList {
@@ -247,21 +387,25 @@ nav {
 .whatWeDoItem {
   width: 70%;
   max-width: 300px;
-  margin: 5%;
+  margin-top: 2%;
+  margin-right: 5%;
 }
 
 .whatWeDoItem h1 {
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: raleway;
-  font-weight: 500;
+  font-family: "raleway bold";
+  font-weight: 400;
   color: #3b3d40;
+  letter-spacing: 1px;
 }
 
 .whatWeDoItem p {
   font-size: 14px;
+  font-family: "acaslom";
+  font-weight: 500;
   text-align: center;
   color: #73787b;
 }
@@ -269,13 +413,13 @@ nav {
 .whatWeDoItem img {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 30%;
 }
 
 /* apps */
 
 .appsContainer {
-  background-image: url(../images/apps/pieza-web.gif);
+  background-image: url(../images/piezas-final/pieza-de-apps.gif);
   background-size: cover;
   height: 700px;
 }
@@ -292,10 +436,13 @@ nav {
   color: white;
   font-size: 40px !important;
   margin: 0;
+  line-height: 28pt;
+  letter-spacing: 1px;
 }
 
 .appsText {
   font-family: "acaslom";
+  margin-top: 30px;
 }
 
 /* fidelizacion */
@@ -308,7 +455,6 @@ nav {
 
 .loyaltyContainer img {
   width: 80%;
-  margin-left: 5%;
 }
 
 .loyaltyTextContainer {
@@ -321,6 +467,7 @@ nav {
   color: #3b3d40;
   font-family: "raleway extrabold";
   font-size: 200% !important;
+  line-height: 35px;
 }
 
 .loyaltyText {
@@ -335,6 +482,7 @@ nav {
   flex-direction: column;
   align-items: center;
   padding-bottom: 7%;
+  padding-top: 5%;
 }
 
 .mainTitleTeam {
@@ -444,12 +592,13 @@ nav {
   padding: 5% 15%;
   display: flex;
   flex-flow: wrap;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .img-container {
-  width: 18%;
+  width: 21%;
   height: auto;
+  margin: 2%;
 }
 
 .img-container img {
@@ -485,6 +634,10 @@ nav {
   font-weight: 500;
 }
 
+.inputContainer {
+  width: 35%;
+}
+
 .formInput {
   border: 0px;
   padding: 10px;
@@ -492,26 +645,31 @@ nav {
   height: 30px;
   margin: 2%;
   background-color: #fd7b69;
-  width: 300px;
+  width: 100%;
   color: white;
   font-family: "raleway light";
   font-weight: 600;
-  font-size: 17px;
+  font-size: 12pt;
+  padding: 10px;
+}
+
+textarea {
+  height: 60px !important;
 }
 
 .formInput::placeholder {
   color: white;
-  padding: 10px;
   font-family: "raleway light";
   font-weight: 600;
-  font-size: 17px;
+  font-size: 12pt;
+  vertical-align: middle;
 }
 
 .formInput:focus {
   color: white;
   font-family: "raleway light";
   font-weight: 600;
-  font-size: 17px;
+  font-size: 12pt;
 }
 
 .formButton {
@@ -541,12 +699,13 @@ nav {
 }
 
 .firstLineFooter {
-  color: gray;
+  color: white;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 10%;
   padding-left: 10%;
+  align-items: center;
 }
 
 .firstLineFooter > h1 {
@@ -597,25 +756,57 @@ nav {
 }
 
 @media (max-width: 600px) {
+  .owl-prev {
+    width: 15px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    display: block !important;
+    border: 0px solid black;
+  }
+
+  .owl-next {
+    width: 15px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    display: block !important;
+    border: 0px solid black;
+  }
+
+  .dropItemContainer {
+    display: none;
+  }
+
+  .smallArrowIcon {
+    display: none;
+  }
+
   .mainTitle {
     margin: 10px;
     color: #3b3d40;
     font-family: "raleway extrabold";
     font-size: 35px !important;
+    line-height: 28pt;
   }
 
   /* hero */
 
-  .navSocial {
+  header {
+    height: auto;
+    min-height: 100%;
+  }
+
+  .navSocialTop {
     visibility: hidden;
   }
 
   .navItemns {
     flex-direction: column;
-    position: absolute;
     width: 100%;
-    right: 2;
-    z-index: 10;
+    padding: 0;
   }
 
   .topnav #myLinks {
@@ -635,8 +826,7 @@ nav {
   /* end mobile nav */
 
   .albertImg {
-    margin-top: 70%;
-    width: 50%;
+    width: 65%;
   }
 
   .title {
@@ -652,11 +842,20 @@ nav {
     font-weight: lighter;
   }
 
-  .downArrow img {
-    width: 40%;
+  .downArrowContainer {
+    width: 15%;
   }
 
   /* startup */
+
+  .startupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 
   .orangeCircle {
     margin-top: 5%;
@@ -668,6 +867,9 @@ nav {
     border-radius: 50%;
   }
 
+  .leyendContainer {
+    width: 100%;
+  }
   .startupLegend {
     margin-bottom: 5%;
     width: 80%;
@@ -685,10 +887,22 @@ nav {
     font-family: "acaslom";
     font-weight: 500;
     font-size: 18px;
-    text-align: justify;
+    text-align: left;
+  }
+
+  .startupCrown {
+    display: none;
   }
 
   /* lo que hacemos */
+
+  .whatWeDoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
 
   .whatWeDoLegend {
     width: 80%;
@@ -709,12 +923,19 @@ nav {
     max-width: 130px;
   }
 
+  .whatWeDoItem img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+
   /* apps */
 
   .appsContainer {
-    background-image: url(../images/apps/mobile-web-aninamdo-app.gif);
+    background-image: url(../images/piezas-final/mobile-web-aninamdo-appss.gif);
     background-size: cover;
     height: 700px;
+    padding-top: 10%;
   }
 
   .appsTextContainer {
@@ -729,24 +950,34 @@ nav {
     color: white;
     font-size: 30px !important;
     margin: 0;
+    line-height: 28px;
+    letter-spacing: 1px;
   }
 
   .appsText {
+    margin-top: 30px;
     font-family: "acaslom";
     font-size: 15px;
   }
 
   /* fidelizacion */
 
+  .loyaltyTitle {
+    line-height: 34px;
+  }
+
   .loyaltyContainer {
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column-reverse;
     padding: 3%;
+    padding-top: 5%;
+    padding-bottom: 20%;
   }
 
   .loyaltyContainer img {
     width: 100%;
+    content: url(../images/piezas-final/mobileloyalty.png);
   }
 
   .loyaltyTextContainer {
@@ -756,6 +987,14 @@ nav {
   }
 
   /* team */
+
+  .teamContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20%;
+    padding-top: 10%;
+  }
 
   .mainTitleTeam {
     width: 80%;
@@ -778,10 +1017,14 @@ nav {
   /* casos de exito */
 
   .succesItem {
-    max-width: 80%;
+    max-width: 70%;
   }
 
   /* clientes */
+
+  .customersContainer {
+    padding-top: 10%;
+  }
 
   .customersMainTitle {
     margin-top: 5%;
@@ -799,6 +1042,7 @@ nav {
     display: block;
     width: 50%;
     height: auto;
+    margin: 0;
   }
 
   .img-container img {
@@ -807,6 +1051,11 @@ nav {
   }
 
   /* hablemos */
+
+  .letsTalkContainer {
+    padding-bottom: 8%;
+    padding-top: 10%;
+  }
 
   .letsTalkMainTitle {
     color: white;
@@ -820,9 +1069,24 @@ nav {
     font-family: acaslom;
     font-weight: 500;
     text-align: center;
+    padding: 6px;
+  }
+
+  .inputContainer {
+    width: 75%;
   }
 
   /* footer */
+
+  .backgroundFooter {
+    background-image: none;
+  }
+
+  .footerContainer {
+    background-color: #000000;
+    opacity: 1;
+    color: white;
+  }
 
   .footerInfoTextPosition {
     display: flex;
@@ -831,7 +1095,7 @@ nav {
 
   .footerInfoText {
     margin: 20px;
-    color: #747474;
+    color: white;
     font-family: acaslom;
     font-weight: 500;
     font-size: 12pt;
@@ -845,7 +1109,7 @@ nav {
   .footerBrand {
     display: flex;
     justify-content: center;
-    color: #747474;
+    color: gray;
     font-family: acaslom;
     font-weight: 500;
     font-size: 7px;

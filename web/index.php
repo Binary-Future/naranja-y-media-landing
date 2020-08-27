@@ -10,7 +10,7 @@
     <link
       rel="shortcut icon"
       type="image/png"
-      href="./images/piezas/favicon.png"
+      href="./images/piezas/favincon1.png"
     />
     <title>Naranja y Media</title>
     <link rel="stylesheet" href="css/index.css" />
@@ -42,7 +42,7 @@
 
   <body>
     <div class="wspButton wspOrangeCircle">
-      <a href="https://wa.me/3043358981" target="_blank"
+      <a href="https://wa.me/+573043358981" target="_blank"
         ><i class="fab fa-whatsapp"></i
       ></a>
     </div>
@@ -54,13 +54,35 @@
         <ul class="navItemns" id="myLinks">
           <li><a href="#startup">STARTUP</a></li>
           <li><a href="#whatWeDo">LO QUE HACEMOS</a></li>
-          <li><a href="#solutions">SOLUCIONES</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="#solutions">
+                SOLUCIONES
+                <i class="fa fa-caret-down smallArrowIcon"></i>
+              </a>
+              <div class="dropdown-content">
+                <div class="dropItemContainer">
+                  <a href="#loyalty">Fidelización</a>
+                  <a href="#successStories">Casos de éxito</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
           <li><a href="#team">TEAM</a></li>
           <li><a href="#letsTalk">HABLEMOS</a></li>
         </ul>
-        <ul class="navSocial">
-          <a href="https://www.linkedin.com/company/naranjaymedia"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"><i class="fab fa-instagram"></i></a>
+        <ul class="navSocial navSocialTop">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/naranjaymedia"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </ul>
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
           <i class="fa fa-bars"></i>
@@ -73,8 +95,10 @@
           <h1 class="title"><b>Naranja & Media</b></h1>
           <h2 class="subtitle">growth marketing</h2>
         </div>
-        <a class="downArrow" href="#startup">
-          <img src="./images/icons/down-arrow.svg" />
+        <a class="downArrowContainer" href="#startup">
+          <div class="downArrow">
+            <img src="./images/icons/down-arrow.svg" />
+          </div>
         </a>
       </div>
     </header>
@@ -82,15 +106,21 @@
     <!-- startup -->
 
     <section id="startup" class="startupContainer">
-      <div class="orangeCircle">
+      <div class="orangeCircle startUpIcon">
         <img src="./images/icons/crown.svg" alt="corona" />
       </div>
 
       <h1 class="mainTitle">StartUp Digital</h1>
-      <p class="startupLegend">
-        Somos el Partner ideal de aquellas organizaciones que buscan
-        transformarse y ser los Reyes del Marketing Digital.
-      </p>
+
+      <div class="leyendContainer">
+        <blockquote>
+          <p class="startupLegend">
+            Somos el Partner ideal de aquellas organizaciones que buscan
+            transformarse y ser los Reyes del Marketing Digital.
+          </p>
+        </blockquote>
+      </div>
+
       <div class="startupText" data-aos="fade-in">
         <p>
           Creamos Estrategias usando los mejores aceleradores de Inbound
@@ -99,10 +129,13 @@
         </p>
         <p>
           Nos especializamos en transformar digitalmente los segmentos de
-          empresas B2B y B2C acompañadolas en este proceso de
-          aceleración,potenciando los productos o servicios en diferentes
-          canales de venta.
+          empresas B2B y B2C acompañadolas en este proceso de aceleración,
+          potenciando los productos o servicios en diferentes canales de venta.
         </p>
+      </div>
+
+      <div class="startupCrown">
+        <img src="./images/piezas/corona marca de agua.png" alt="" />
       </div>
     </section>
 
@@ -112,7 +145,7 @@
       <div class="orangeCircle borderIconWhatWeDo">
         <img src="./images/icons/app.svg" alt="corona" />
       </div>
-      <h1 class="mainTitle">Lo que hacemos</h1>
+      <h1 class="mainTitle whatWeDoTitle">Lo que hacemos</h1>
       <p class="whatWeDoLegend">
         Nutrimos tu marca de manera creativa en los siguientes frentes:
       </p>
@@ -163,14 +196,14 @@
           Desarrollamos aplicaciones first mobile con nuestro partner
           estratégico Binary Future para los sistemas Android y iOs con usos a
           medida y comerciales, además te ayudamos a monetizarla y generar
-          cualquier los diferentes tipos de integración.
+          cualquiera de los diferentes tipos de integración.
         </p>
       </div>
     </section>
 
     <!-- fidelizacion -->
 
-    <section class="loyaltyContainer">
+    <section id="loyalty" class="loyaltyContainer">
       <img src="./images/piezas/pieza-loyalty.png" alt="" />
       <div class="loyaltyTextContainer">
         <h1 class="loyaltyTitle">
@@ -313,7 +346,15 @@
         <div class="img-container">
           <img
             data-aos="fade-in"
-            src="./images/logos-clientes/accusys.png"
+            src="./images/logos-clientes/cherry.png"
+            alt=""
+          />
+        </div>
+
+        <div class="img-container">
+          <img
+            data-aos="fade-in"
+            src="./images/logos-clientes/prana.png"
             alt=""
           />
         </div>
@@ -329,14 +370,6 @@
         <div class="img-container">
           <img
             data-aos="fade-in"
-            src="./images/logos-clientes/cherry.png"
-            alt=""
-          />
-        </div>
-
-        <div class="img-container">
-          <img
-            data-aos="fade-in"
             src="./images/logos-clientes/colperu.png"
             alt=""
           />
@@ -345,7 +378,15 @@
         <div class="img-container">
           <img
             data-aos="fade-in"
-            src="./images/logos-clientes/embotellate.png"
+            src="./images/logos-clientes/uniempresarial.png"
+            alt=""
+          />
+        </div>
+
+        <div class="img-container">
+          <img
+            data-aos="fade-in"
+            src="./images/logos-clientes/rosen.png"
             alt=""
           />
         </div>
@@ -365,31 +406,6 @@
             alt=""
           />
         </div>
-
-        <div class="img-container">
-          <img
-            data-aos="fade-in"
-            src="./images/logos-clientes/rosen.png"
-            alt=""
-          />
-        </div>
-
-        <div class="img-container">
-          <img
-            data-aos="fade-in"
-            src="./images/logos-clientes/uniempresarial.png"
-            alt=""
-          />
-        </div>
-
-        <div class="img-container">
-          <img
-            data-aos="fade-in"
-            src="./images/logos-clientes/prana.png"
-            alt=""
-          />
-        </div>
-
       </div>
     </section>
 
@@ -403,7 +419,7 @@
         <p class="letsTalkText">
           Déjanos tus datos y nos comunicaremos contigo a la brevedad
         </p>
-        <form class="columnCentered">
+        <form class="columnCentered inputContainer">
           <input
             id="nombre"
             class="formInput"
@@ -425,13 +441,14 @@
             required
             placeholder="Móvil"
           />
-          <input
+          <textarea
             id="mensaje"
             class="formInput"
             type="textarea"
             required
             placeholder="Déjanos tu mensaje"
-          />
+            rows="60"
+          ></textarea>
           <small id="errorMessage" class="error-message d-none"
             >Todos los campos son obligatorios</small
           >
@@ -453,8 +470,16 @@
         <div class="firstLineFooter">
           <h1>Naranja & Media</h1>
           <ul class="navSocial">
-            <a href="https://www.linkedin.com/company/naranjaymedia"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"><i class="fab fa-instagram"></i></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/naranjaymedia"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://instagram.com/naranjaymediacol?igshid=kr7w3olevtju"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </ul>
         </div>
         <div class="footerInfoTextPosition">
