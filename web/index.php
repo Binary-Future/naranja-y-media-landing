@@ -10,7 +10,7 @@
     <link
       rel="shortcut icon"
       type="image/png"
-      href="./images/piezas/favicon.png"
+      href="./images/piezas/favincon1.png"
     />
     <title>Naranja y Media</title>
     <link rel="stylesheet" href="css/index.css" />
