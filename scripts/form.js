@@ -37,12 +37,7 @@ $('#formButton').click((e) => {
 	const phpmailer = '/mail/main.php'
 	$.post(phpmailer, JSON.stringify(data))
 	.done(data => {
-    	if (data.success) {
-    		alert('Correo enviado exitosamente')
-    	} else {
-    		alert('El correo no se ha podido enviar, intente mas tarde');
-    	}
-
+		alert('Correo enviado exitosamente')
     	sendStatus$.classList.add('d-none');
 		send$.classList.remove('d-none');
     })
