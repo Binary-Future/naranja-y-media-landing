@@ -36,7 +36,7 @@ $mail->setFrom($email, $nombre);
 
 //Set who the message is to be sent to
 // fixme set email and name from company
-$mail->addAddress('binaryfuture2020@gmail.com', 'Binary Future');
+$mail->addAddress('naranjamasmedia@gmail.com', 'Binary Future');
 $mail->Subject = 'Email desde la pagina';
 $mail->Body    = "
   Nombre: {$nombre}

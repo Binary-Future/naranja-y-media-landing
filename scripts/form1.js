@@ -34,7 +34,7 @@ $('#formButton').click((e) => {
 
 	console.log(data);
 
-	const phpmailer = '/mail/main.php'
+	const phpmailer = '/mail/mailer.php'
 	$.post(phpmailer, JSON.stringify(data))
 	.done(data => {
 		alert('Correo enviado exitosamente')
