@@ -34,7 +34,8 @@ $('#formButton').click((e) => {
 
 	console.log(data);
 
-	$.post('https://naranja-y-media-node.herokuapp.com/form',data)
+	const phpmailer = '/mail/main.php'
+	$.post(phpmailer, JSON.stringify(data))
 	.done(data => {
     	if (data.success) {
     		alert('Correo enviado exitosamente')

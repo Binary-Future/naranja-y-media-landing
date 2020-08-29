@@ -27,13 +27,13 @@
 
 @font-face {
   font-family: "acaslom";
-  src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Regular")
+  src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Regular/Adobe Caslon Pro Regular.ttf")
     format("truetype");
 }
 
 @font-face {
   font-family: "acaslom-semibold";
-  src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Semibold")
+  src: url("../fonts/adobe-caslon-pro/Adobe Caslon Pro/Adobe Caslon Pro Semibold/Adobe Caslon Pro Semibold.ttf")
     format("truetype");
 }
 
@@ -526,10 +526,11 @@ blockquote p {
 
 .teamMemberTextOne {
   color: #656b6f;
-  font-size: 16px;
+  font-size: 14px;
   width: 70%;
   font-weight: 500;
   font-family: acaslom;
+  line-height: 15pt;
 }
 
 .teamMemberTextTwo {
