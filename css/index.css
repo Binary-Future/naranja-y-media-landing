@@ -756,7 +756,7 @@ textarea {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .owl-prev {
     width: 15px;
     height: auto;
